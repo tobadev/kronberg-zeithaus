@@ -33,7 +33,7 @@ export const RequestInformationForm: React.FC<RequestInformationFormProps> = ({ 
         <div className="w-12 h-0.5 bg-gold-500 mb-4"></div>
         <h2 className="font-serif text-3xl text-white mb-2">Confidential Acquisition Inquiry</h2>
         <p className="text-zinc-400 text-sm leading-relaxed">
-          Submit a non-binding request for private sourcing and consultation. All inquiries are handled with absolute discretion.
+          A confidential request does not initiate a transaction — it begins a dialogue. Share your objectives, horizon, and reference of interest, and a curator will respond personally.
         </p>
       </div>
 

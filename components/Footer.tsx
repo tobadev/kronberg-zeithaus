@@ -10,9 +10,11 @@ export const Footer: React.FC = () => {
           {/* Brand Column */}
           <div className="col-span-1">
             <h3 className="font-serif text-2xl text-white mb-6">KRONBERG <span className="text-gold-500 italic">Zeithaus</span></h3>
-            <p className="text-zinc-400 text-sm leading-relaxed max-w-sm">
-              Curating the finest horological masterpieces for the discerning collector. 
-              Based in the heart of Maximilianstraße, München.
+            <p className="text-zinc-400 text-sm leading-relaxed max-w-sm mb-4">
+              Collectors, not customers. Verified before visible.
+            </p>
+            <p className="text-zinc-500 text-xs leading-relaxed max-w-sm">
+              Maximilianstraße, München
             </p>
           </div>
           

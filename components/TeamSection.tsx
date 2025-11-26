@@ -16,7 +16,7 @@ export const TeamSection: React.FC = () => {
           <div className="w-16 h-0.5 bg-gold-500 mx-auto mb-6"></div>
           <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">The Team</h2>
           <p className="text-zinc-400 text-sm max-w-2xl mx-auto leading-relaxed">
-            A discreet group of specialists united by a commitment to curatorial excellence and client confidentiality.
+            Our team reflects the mindset of the region — specialists who prefer rigor over noise. Each member focuses on a single discipline: acquisition, provenance research, authentication, or institutional coordination. No assistants, no offshore routing, no volume targets. Every request receives senior attention from the beginning.
           </p>
         </div>
 

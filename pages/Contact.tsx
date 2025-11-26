@@ -19,6 +19,12 @@ export const Contact: React.FC = () => {
           subtitle="Strategic alliances, allocation mandates, and advisory relationships"
         />
 
+        <div className="max-w-3xl mx-auto mb-12 text-center">
+          <p className="text-zinc-400 text-sm leading-relaxed">
+            Kronberg Zeithaus collaborates selectively with private banks, family offices, independent watchmakers, and cultural institutions. We prioritize partnerships grounded in patience, transparency, and a shared respect for mechanical heritage. If your mandate aligns with ours, we welcome an introduction.
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-12">
           {/* Left Column - Info */}
           <div className="space-y-12">

@@ -136,8 +136,11 @@ export const Home: React.FC = () => {
       >
         <div className="max-w-3xl mx-auto px-6 text-center">
           <div className="w-16 h-0.5 bg-gold-500 mx-auto mb-8"></div>
-          <p className="font-serif text-2xl md:text-3xl text-zinc-300 leading-relaxed">
-            "In an era of mass production, Kronberg Zeithaus remains a bastion of the unique. We specialize in the acquisition of discontinued references and high-complication timepieces that define the pinnacle of German and Swiss engineering."
+          <p className="font-serif text-3xl md:text-4xl text-zinc-300 leading-relaxed italic">
+            For those who measure ownership in decades, not seasons.
+          </p>
+          <p className="text-zinc-500 text-sm mt-8 uppercase tracking-widest">
+            Discretion · Patience · Continuity
           </p>
         </div>
       </motion.section>

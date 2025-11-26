@@ -10,24 +10,24 @@ export const About: React.FC = () => {
         
         <div className="prose prose-invert prose-lg mx-auto font-light text-zinc-300 space-y-8 leading-loose">
           <p>
-            <span className="text-gold-500 font-serif text-5xl float-left mr-4 mt-[-10px] opacity-80">Z</span>
-            eithaus Kronberg was founded on a singular conviction: that a watch is not merely an instrument of time, but a vessel of history. In Munich, a city where tradition meets precision, we have established a sanctuary for the serious collector.
+            <span className="text-gold-500 font-serif text-5xl float-left mr-4 mt-[-10px] opacity-80">K</span>
+            ronberg Zeithaus was shaped by a very local philosophy — the quiet Bavarian belief that value reveals itself over time, not in conversation. In a region where engineering, restraint, and multigenerational planning are cultural habits rather than strategies, our role is simple: to safeguard what endures.
           </p>
           <p>
-            We operate outside the rhythms of conventional retail. Our inventory is not determined by market trends, but by strict criteria of horological significance, condition, and provenance. We view ourselves not as merchants, but as stewards of mechanical art, passing masterpieces from one custodian to the next.
+            Rather than operating as a public retailer, we function as a private point of reference for collectors who prioritize provenance, condition integrity, and long-term stewardship. Every timepiece we handle has already passed through layers of verification, context, and quiet observation. Nothing is rushed. Nothing is speculative.
           </p>
-          
+
           <div className="my-16 border-l-2 border-gold-500 pl-8 py-2 bg-charcoal-950/50 rounded-r-sm">
             <p className="font-serif text-2xl italic text-white mb-4 leading-normal">
-              "We do not sell watches. We curate time, history, and engineering excellence for the next generation. A collection is a legacy."
+              "Discretion is the first service offered. Patience is a competitive advantage."
             </p>
             <cite className="text-xs uppercase tracking-widest text-zinc-500 not-italic font-medium">
-              — Friedrich von Kronberg, Founder
+              — Craft, custody, continuity
             </cite>
           </div>
 
           <p>
-            Our "request-only" sourcing service allows our clients to bypass the volatility of the open market. Through decades of cultivating relationships with private sellers, auction houses, and authorized partners across Europe, we access references that never appear in public listings.
+            Our network remains intentionally compact — founded on introductions, not marketing. Discretion protects both the watches and the people who pursue them. Every request receives personal attention. We measure success not in transactions, but in trusted custodianship across generations.
           </p>
         </div>
 
