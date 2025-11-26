@@ -296,8 +296,11 @@ export const watches: Watch[] = [
       'Perpetual calendar integrated into the asymmetric Lange 1 architecture — a rare fusion of complexity and restraint.',
     investmentNote:
       'Low production capacity ensures long-term supply-demand imbalance.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1594576722512-582bcd46fba3?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/watches/lange-qp/1.jpg',
+    additionalImages: [
+      '/images/watches/lange-qp/2.jpg',
+      '/images/watches/lange-qp/3.jpg'
+    ],
     status: 'Available for Consultation'
   }
 ];
