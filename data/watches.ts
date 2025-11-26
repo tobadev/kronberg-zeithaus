@@ -33,8 +33,10 @@ export const watches: Watch[] = [
       'Platinum case and hand-finished movement architecture. Considered the benchmark high-complication chronograph.',
     investmentNote:
       'Institutional collectors consistently acquire Datographs for long-term portfolio positioning.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1594576722512-582bcd46fba3?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/watches/lange-datograph/1.jpg',
+    additionalImages: [
+      '/images/watches/lange-datograph/2.jpg'
+    ],
     status: 'Available for Consultation'
   },
   {
