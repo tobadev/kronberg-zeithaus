@@ -118,8 +118,7 @@ export const watches: Watch[] = [
       'Symmetrical exposed movement inspired by Abraham-Louis Breguet’s souscription pocket watches.',
     investmentNote:
       'Growing academic recognition elevates historical Breguet references into serious collectibles.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1619134778706-ccf8f0f9090b?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/watches/breguet-tradition/1.jpg',
     status: 'By Private Request'
   },
   {
