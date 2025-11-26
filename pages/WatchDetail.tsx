@@ -11,10 +11,21 @@ export const WatchDetail: React.FC = () => {
   const navigate = useNavigate();
   const watch = watches.find(w => w.id === id);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentImageUrl, setCurrentImageUrl] = useState<string>('');
+  const [imageKey, setImageKey] = useState(0);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [id]);
+    if (watch) {
+      setCurrentImageUrl(watch.imageUrl);
+      setImageKey(prev => prev + 1);
+    }
+  }, [id, watch]);
+
+  const handleImageClick = (newImageUrl: string) => {
+    setCurrentImageUrl(newImageUrl);
+    setImageKey(prev => prev + 1);
+  };
 
   if (!watch) {
     return (
@@ -42,22 +53,61 @@ export const WatchDetail: React.FC = () => {
           <div className="space-y-4">
              <div className="aspect-[4/5] bg-zinc-950 overflow-hidden border border-zinc-800">
                 <motion.img
+                  key={imageKey}
                   initial={{ opacity: 0, filter: "blur(6px)" }}
                   animate={{ opacity: 1, filter: "blur(0px)" }}
-                  transition={{ duration: 1.2, ease: "easeOut" }}
-                  src={watch.imageUrl}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                  src={currentImageUrl}
                   alt={`${watch.brand} ${watch.model}`}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
                 />
              </div>
-             <div className="grid grid-cols-2 gap-4">
+
+             {watch.additionalImages && watch.additionalImages.length > 0 ? (
+               <div className="grid grid-cols-3 gap-4">
+                 {/* Main image as first thumbnail */}
+                 <motion.div
+                   initial={{ opacity: 0, filter: "blur(6px)" }}
+                   animate={{ opacity: 1, filter: "blur(0px)" }}
+                   transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
+                   onClick={() => handleImageClick(watch.imageUrl)}
+                   className={`aspect-square bg-zinc-950 overflow-hidden border ${currentImageUrl === watch.imageUrl ? 'border-gold-500' : 'border-zinc-800'} cursor-pointer group`}
+                 >
+                   <img
+                     src={watch.imageUrl}
+                     alt={`${watch.brand} ${watch.model}`}
+                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                   />
+                 </motion.div>
+
+                 {/* Additional images */}
+                 {watch.additionalImages.slice(0, 2).map((imgUrl, index) => (
+                   <motion.div
+                     key={index}
+                     initial={{ opacity: 0, filter: "blur(6px)" }}
+                     animate={{ opacity: 1, filter: "blur(0px)" }}
+                     transition={{ duration: 1.2, delay: 0.3 + (index * 0.1), ease: "easeOut" }}
+                     onClick={() => handleImageClick(imgUrl)}
+                     className={`aspect-square bg-zinc-950 overflow-hidden border ${currentImageUrl === imgUrl ? 'border-gold-500' : 'border-zinc-800'} cursor-pointer group`}
+                   >
+                     <img
+                       src={imgUrl}
+                       alt={`${watch.brand} ${watch.model} - Detail ${index + 1}`}
+                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                     />
+                   </motion.div>
+                 ))}
+               </div>
+             ) : (
+               <div className="grid grid-cols-2 gap-4">
                  <div className="aspect-square bg-zinc-900/50 border border-zinc-800 flex items-center justify-center text-zinc-700 text-xs tracking-widest uppercase">
                     Detail Shot 1
                  </div>
                  <div className="aspect-square bg-zinc-900/50 border border-zinc-800 flex items-center justify-center text-zinc-700 text-xs tracking-widest uppercase">
                     Detail Shot 2
                  </div>
-             </div>
+               </div>
+             )}
           </div>
 
           {/* Info Section */}
