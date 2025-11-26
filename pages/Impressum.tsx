@@ -34,7 +34,7 @@ export const Impressum: React.FC = () => {
             <h3 className="text-white font-serif text-xl mb-4">Kontakt</h3>
             <p>
               Telefon: +49 (0) 89 1234 5678<br />
-              E-Mail: concierge@kronberg-zeithaus.de
+              E-Mail: concierge@kronbergzeithaus.de
             </p>
           </div>
 

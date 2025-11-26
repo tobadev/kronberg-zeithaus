@@ -72,7 +72,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div className="flex items-center space-x-4">
                   <Mail className="w-5 h-5 text-gold-500" />
-                  <a href="mailto:partnerships@kronberg-zeithaus.de" className="text-zinc-400 hover:text-white transition-colors text-sm">partnerships@kronberg-zeithaus.de</a>
+                  <a href="mailto:partnerships@kronbergzeithaus.de" className="text-zinc-400 hover:text-white transition-colors text-sm">partnerships@kronbergzeithaus.de</a>
                 </div>
               </div>
             </div>

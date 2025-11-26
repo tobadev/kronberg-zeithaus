@@ -34,7 +34,7 @@ export const PrivacyPolicy: React.FC = () => {
               Kronberg Zeithaus GmbH<br/>
               Maximilianstraße 14<br/>
               80539 München<br/>
-              E-Mail: concierge@kronberg-zeithaus.de
+              E-Mail: concierge@kronbergzeithaus.de
             </p>
           </div>
 
