@@ -15,13 +15,13 @@ export const Collection: React.FC = () => {
     'Patek Philippe',
     'Vacheron Constantin',
     'Richard Mille',
-    'Others'
+    'Independent Ateliers'
   ];
 
   // Filtering logic
   const filteredWatches = watches.filter((watch) => {
     if (filter === 'All') return true;
-    if (filter === 'Others') {
+    if (filter === 'Independent Ateliers') {
       return ![
         'F.P. Journe',
         'A. Lange & Söhne',
