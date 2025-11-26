@@ -63,14 +63,14 @@ export const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile Nav Overlay */}
-      <div className={`fixed inset-0 bg-charcoal-900 z-40 flex flex-col justify-center items-center transition-opacity duration-300 md:hidden ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
-        <div className="flex flex-col gap-8 text-center">
+      <div className={`fixed inset-0 bg-charcoal-900 z-[45] flex flex-col justify-center items-center transition-all duration-300 md:hidden ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+        <div className="flex flex-col gap-8 text-center pt-20">
           {navLinks.map((link) => (
             <NavLink
               key={link.path}
               to={link.path}
-              className={({ isActive }) => 
-                `font-serif text-2xl transition-colors ${isActive ? 'text-gold-500' : 'text-zinc-300'}`
+              className={({ isActive }) =>
+                `font-serif text-2xl transition-colors hover:text-gold-500 ${isActive ? 'text-gold-500' : 'text-zinc-300'}`
               }
             >
               {link.name}
