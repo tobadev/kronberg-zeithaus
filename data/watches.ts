@@ -35,9 +35,9 @@ export const watches: Watch[] = [
       'Platinum case and hand-finished movement architecture. Considered the benchmark high-complication chronograph.',
     investmentNote:
       'Institutional collectors consistently acquire Datographs for long-term portfolio positioning.',
-    imageUrl: '/images/watches/lange-datograph/1.jpg',
+    imageUrl: '/images/watches/lange-datograph/1.png',
     additionalImages: [
-      '/images/watches/lange-datograph/2.jpg'
+      '/images/watches/lange-datograph/2.png'
     ],
     status: 'Available for Consultation'
   },
@@ -299,10 +299,10 @@ export const watches: Watch[] = [
       'Perpetual calendar integrated into the asymmetric Lange 1 architecture — a rare fusion of complexity and restraint.',
     investmentNote:
       'Low production capacity ensures long-term supply-demand imbalance.',
-    imageUrl: '/images/watches/lange-qp/1.jpg',
+    imageUrl: '/images/watches/lange-qp/1.png',
     additionalImages: [
-      '/images/watches/lange-qp/2.jpg',
-      '/images/watches/lange-qp/3.jpg'
+      '/images/watches/lange-qp/2.png',
+      '/images/watches/lange-qp/3.png'
     ],
     status: 'Available for Consultation'
   }
