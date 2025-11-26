@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, NavLink, useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { watches } from '../data/watches';
 import { ArrowLeft, CheckCircle2, Shield, TrendingUp } from 'lucide-react';
 
@@ -37,9 +38,12 @@ export const WatchDetail: React.FC = () => {
           {/* Image Section */}
           <div className="space-y-4">
              <div className="aspect-[4/5] bg-zinc-950 overflow-hidden border border-zinc-800">
-                <img 
-                  src={watch.imageUrl} 
-                  alt={`${watch.brand} ${watch.model}`} 
+                <motion.img
+                  initial={{ opacity: 0, filter: "blur(6px)" }}
+                  animate={{ opacity: 1, filter: "blur(0px)" }}
+                  transition={{ duration: 1.2, ease: "easeOut" }}
+                  src={watch.imageUrl}
+                  alt={`${watch.brand} ${watch.model}`}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
                 />
              </div>

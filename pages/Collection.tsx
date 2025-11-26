@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { SectionHeading } from '../components/SectionHeading';
 import { WatchCard } from '../components/WatchCard';
 import { watches } from '../data/watches';
@@ -43,11 +44,16 @@ export const Collection: React.FC = () => {
         </div>
 
         {filteredWatches.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            transition={{ staggerChildren: 0.08 }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          >
             {filteredWatches.map(watch => (
               <WatchCard key={watch.id} watch={watch} />
             ))}
-          </div>
+          </motion.div>
         ) : (
           <div className="text-center py-24 border border-zinc-800/50 rounded-sm">
             <p className="text-zinc-500 font-serif italic text-lg">No timepieces currently displayed for this selection.</p>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { SectionHeading } from '../components/SectionHeading';
 import { WatchCard } from '../components/WatchCard';
 import { watches } from '../data/watches';
@@ -78,68 +79,112 @@ export const Home: React.FC = () => {
         </div>
         
         <div className="relative z-20 text-center max-w-5xl px-6">
-          <p className="text-gold-500 text-xs md:text-sm tracking-[0.3em] uppercase mb-6 animate-slide-up">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-gold-500 text-xs md:text-sm tracking-[0.3em] uppercase mb-6"
+          >
             Munich • Private Sourcing • Investment Grade
-          </p>
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-8 leading-tight animate-slide-up delay-100">
+          </motion.p>
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
+            className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-8 leading-tight"
+          >
             Assets of <br/><span className="italic text-zinc-400">Permanence</span>
-          </h1>
-          <p className="text-zinc-300 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto mb-12 animate-slide-up delay-200">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+            className="text-zinc-300 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto mb-12"
+          >
             We do not simply sell watches. We curate horological history for the discerning investor.
             Available by appointment in Maximilianstraße.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up delay-300">
-            <NavLink 
-              to="/watches" 
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.45, ease: "easeOut" }}
+            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+          >
+            <NavLink
+              to="/watches"
               className="px-8 py-4 bg-gold-500 text-charcoal-950 text-sm tracking-widest uppercase hover:bg-white transition-colors duration-300 font-medium min-w-[200px]"
             >
               View Collection
             </NavLink>
-            <NavLink 
-              to="/contact" 
+            <NavLink
+              to="/contact"
               className="px-8 py-4 border border-zinc-600 text-white text-sm tracking-widest uppercase hover:border-gold-500 hover:text-gold-500 transition-colors duration-300 min-w-[200px]"
             >
               Inquire Now
             </NavLink>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Brand Statement */}
-      <section className="py-20 bg-charcoal-950 border-b border-zinc-900">
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-10%" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="py-20 bg-charcoal-950 border-b border-zinc-900"
+      >
         <div className="max-w-3xl mx-auto px-6 text-center">
           <div className="w-16 h-0.5 bg-gold-500 mx-auto mb-8"></div>
           <p className="font-serif text-2xl md:text-3xl text-zinc-300 leading-relaxed">
             "In an era of mass production, Kronberg Zeithaus remains a bastion of the unique. We specialize in the acquisition of discontinued references and high-complication timepieces that define the pinnacle of German and Swiss engineering."
           </p>
         </div>
-      </section>
+      </motion.section>
 
       {/* Featured Collection */}
-      <section className="py-24 bg-charcoal-900 px-6">
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-10%" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="py-24 bg-charcoal-900 px-6"
+      >
         <div className="max-w-7xl mx-auto">
-          <SectionHeading 
-            title="Curated Selections" 
+          <SectionHeading
+            title="Curated Selections"
             subtitle="Recent acquisitions from our private network"
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-10%" }}
+            transition={{ staggerChildren: 0.08 }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
             {featuredWatches.map(watch => (
               <WatchCard key={watch.id} watch={watch} />
             ))}
-          </div>
+          </motion.div>
           <div className="mt-16 text-center">
-            <NavLink 
-              to="/watches" 
+            <NavLink
+              to="/watches"
               className="inline-block border-b border-gold-500 pb-1 text-gold-500 uppercase tracking-widest text-xs hover:text-white hover:border-white transition-colors"
             >
               View Entire Inventory
             </NavLink>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Trust & Value - "Why Collectors Choose Us" */}
-      <section className="py-24 bg-charcoal-950 px-6 border-y border-zinc-900">
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-10%" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="py-24 bg-charcoal-950 px-6 border-y border-zinc-900"
+      >
         <div className="max-w-7xl mx-auto">
            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="px-4 group">
@@ -171,10 +216,16 @@ export const Home: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Boutique Location - Hybrid Interactive Map */}
-      <section className="py-24 bg-charcoal-950 border-t border-zinc-900">
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-10%" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="py-24 bg-charcoal-950 border-t border-zinc-900"
+      >
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
             {/* Left Content */}
@@ -286,7 +337,7 @@ export const Home: React.FC = () => {
                </div>
             </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

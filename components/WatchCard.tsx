@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Watch } from '../types';
 import { ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -7,11 +8,26 @@ interface WatchCardProps {
   watch: Watch;
 }
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut"
+    }
+  }
+};
+
 export const WatchCard: React.FC<WatchCardProps> = ({ watch }) => {
   const navigate = useNavigate();
 
   return (
-    <div 
+    <motion.div
+      variants={cardVariants}
+      whileHover={{ scale: 1.03 }}
+      transition={{ duration: 0.25, ease: "easeOut" }}
       onClick={() => navigate(`/watches/${watch.id}`)}
       className="group flex flex-col bg-charcoal-950/50 border border-zinc-800 hover:border-gold-500/50 transition-all duration-500 ease-out cursor-pointer h-full"
     >
@@ -49,6 +65,6 @@ export const WatchCard: React.FC<WatchCardProps> = ({ watch }) => {
           <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1 text-gold-500" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
