@@ -53,11 +53,10 @@ export const Footer: React.FC = () => {
 
         <div className="border-t border-zinc-900 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-zinc-600 text-xs">
-            © {new Date().getFullYear()} Kronberg Zeithaus. All rights reserved.
+            © {new Date().getFullYear()} Kronberg Zeithaus. All rights reserved. | Built by <a href="https://amdigital.agency/" target="_blank" rel="noopener noreferrer" className="text-gold-500 hover:text-white transition-colors">AM Digital Agency</a>
           </p>
           <p className="text-zinc-600 text-xs max-w-md text-center md:text-right">
-            Disclaimer: This website is a design and brand demonstration. No commercial activity or watch sales occur.
-            Kronberg Zeithaus is a fictional entity.
+            Kronberg Zeithaus is an independent specialist dealer in rare timepieces. Not affiliated with watch manufacturers or authorized retailers.
           </p>
         </div>
       </div>
