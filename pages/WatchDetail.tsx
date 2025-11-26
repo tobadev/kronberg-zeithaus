@@ -1,13 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, NavLink, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { watches } from '../data/watches';
 import { ArrowLeft, CheckCircle2, Shield, TrendingUp } from 'lucide-react';
+import { Modal } from '../components/Modal';
+import { RequestInformationForm } from '../components/RequestInformationForm';
 
 export const WatchDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const watch = watches.find(w => w.id === id);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -116,12 +119,12 @@ export const WatchDetail: React.FC = () => {
 
              {/* CTA */}
              <div className="mt-auto">
-                 <NavLink 
-                    to={`/contact?model=${encodeURIComponent(`${watch.brand} ${watch.model}`)}`}
+                 <button
+                    onClick={() => setIsModalOpen(true)}
                     className="block w-full text-center bg-white text-charcoal-950 py-4 text-sm uppercase tracking-widest font-bold hover:bg-gold-500 transition-colors duration-300"
                  >
                     Request Information
-                 </NavLink>
+                 </button>
                  <p className="text-center text-zinc-600 text-xs mt-4">
                     <Shield className="w-3 h-3 inline mr-1" />
                     Insured worldwide shipping available
@@ -130,6 +133,11 @@ export const WatchDetail: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Modal */}
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+        <RequestInformationForm watch={watch} />
+      </Modal>
     </div>
   );
 };

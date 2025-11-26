@@ -1,5 +1,6 @@
 import React from 'react';
 import { SectionHeading } from '../components/SectionHeading';
+import { TeamSection } from '../components/TeamSection';
 
 export const About: React.FC = () => {
   return (
@@ -29,6 +30,8 @@ export const About: React.FC = () => {
             Our "request-only" sourcing service allows our clients to bypass the volatility of the open market. Through decades of cultivating relationships with private sellers, auction houses, and authorized partners across Europe, we access references that never appear in public listings.
           </p>
         </div>
+
+        <TeamSection />
 
         <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="aspect-[4/5] bg-zinc-900 relative group overflow-hidden border border-zinc-800">
