@@ -8,13 +8,27 @@ export const Collection: React.FC = () => {
   const [filter, setFilter] = useState('All');
 
   // Define available filters
-  const filters = ['All', 'Rolex', 'Patek Philippe', 'Audemars Piguet', 'Others'];
+  const filters = [
+    'All',
+    'F.P. Journe',
+    'A. Lange & Söhne',
+    'Patek Philippe',
+    'Vacheron Constantin',
+    'Richard Mille',
+    'Others'
+  ];
 
-  // Filter logic
-  const filteredWatches = watches.filter(watch => {
+  // Filtering logic
+  const filteredWatches = watches.filter((watch) => {
     if (filter === 'All') return true;
     if (filter === 'Others') {
-      return !['Rolex', 'Patek Philippe', 'Audemars Piguet'].includes(watch.brand);
+      return ![
+        'F.P. Journe',
+        'A. Lange & Söhne',
+        'Patek Philippe',
+        'Vacheron Constantin',
+        'Richard Mille'
+      ].includes(watch.brand);
     }
     return watch.brand === filter;
   });
