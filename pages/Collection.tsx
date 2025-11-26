@@ -1,11 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { SectionHeading } from '../components/SectionHeading';
 import { WatchCard } from '../components/WatchCard';
 import { watches } from '../data/watches';
+import { useLocation } from 'react-router-dom';
 
 export const Collection: React.FC = () => {
   const [filter, setFilter] = useState('All');
+  const location = useLocation();
+
+  // Reset filter when returning to collection page
+  useEffect(() => {
+    setFilter('All');
+  }, [location.pathname]);
 
   // Define available filters
   const filters = [
@@ -59,6 +66,7 @@ export const Collection: React.FC = () => {
 
         {filteredWatches.length > 0 ? (
           <motion.div
+            key={filter}
             initial="hidden"
             animate="visible"
             transition={{ staggerChildren: 0.08 }}
