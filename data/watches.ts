@@ -51,8 +51,11 @@ export const watches: Watch[] = [
       'Discontinued white-gold chronograph with restrained production and a historically significant Lemania-based calibre.',
     investmentNote:
       'Auction performance remains strong due to cultural and mechanical relevance.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1639037233762-b94f57c24483?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/watches/5070g/1.jpg',
+    additionalImages: [
+      '/images/watches/5070g/2.jpg',
+      '/images/watches/5070g/3.jpg'
+    ],
     status: 'Reserved'
   },
   {
@@ -66,11 +69,15 @@ export const watches: Watch[] = [
     condition: 'Unworn',
     boxPapers: 'Full Set',
     description:
-      'Rose-gold reinterpretation of a 1920s driver’s watch with an off-center dial and cushion case.',
+      'Rose-gold reinterpretation of a 1920s driver\'s watch with an off-center dial and cushion case.',
     investmentNote:
       'Production scarcity and unique design identity support long-term collectability.',
     imageUrl:
-      'https://images.unsplash.com/photo-1547996663-0b555e548215?auto=format&fit=crop&w=800&q=80',
+      'https://www.vacheron-constantin.com/dam/rcq/vac/14/64/15/2/1464152.png.transform.vacdetailhd.png',
+    additionalImages: [
+      'https://www.vacheron-constantin.com/dam/rcq/vac/JG/jO/al/m5/RH/iU/4M/G7/XC/eY/9Q/JGjOalm5RHiU4MG7XCeY9Q.jpeg.transform.vacdetailhd.jpeg',
+      'https://www.vacheron-constantin.com/dam/rcq/vac/iB/A9/cj/4r/Tx/yx/8k/I8/b3/RN/uw/iBA9cj4rTxyx8kI8b3RNuw.jpeg.transform.vacdetailhd.jpeg'
+    ],
     status: 'Available for Consultation'
   },
   {
