@@ -91,7 +91,7 @@ export const watches: Watch[] = [
     condition: 'Excellent',
     boxPapers: 'Full Set',
     description:
-      'Early-generation titanium RM showcasing the architectural design that defined the brand's trajectory.',
+      'Early-generation titanium RM showcasing the architectural design that defined the brand\'s trajectory.',
     investmentNote:
       'Collectors increasingly seek first-era references for historical relevance.',
     imageUrl: '/images/watches/rm005/1.jpg',
