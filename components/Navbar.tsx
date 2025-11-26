@@ -63,8 +63,17 @@ export const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile Nav Overlay */}
-      <div className={`fixed inset-0 bg-charcoal-900 z-[45] flex flex-col justify-center items-center transition-all duration-300 md:hidden ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
-        <div className="flex flex-col gap-8 text-center pt-20">
+      <div className={`fixed inset-0 bg-charcoal-900 z-[60] flex flex-col justify-center items-center transition-all duration-300 md:hidden ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+        {/* Close Button */}
+        <button
+          onClick={() => setIsOpen(false)}
+          className="absolute top-6 right-6 text-zinc-300 hover:text-gold-500 transition-colors"
+          aria-label="Close menu"
+        >
+          <X className="w-8 h-8" />
+        </button>
+
+        <div className="flex flex-col gap-8 text-center">
           {navLinks.map((link) => (
             <NavLink
               key={link.path}
