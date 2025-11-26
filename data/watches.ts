@@ -15,8 +15,10 @@ export const watches: Watch[] = [
       'Tantalum case with a deep chrome-blue dial. A modern icon of independent watchmaking with exceptionally low production.',
     investmentNote:
       'Extremely limited output and longstanding waitlists continue to elevate secondary market valuations.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/watches/fpj-bleu/1.jpg',
+    additionalImages: [
+      '/images/watches/fpj-bleu/2.jpg'
+    ],
     status: 'By Private Request'
   },
   {
