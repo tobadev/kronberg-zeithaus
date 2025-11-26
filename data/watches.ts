@@ -278,8 +278,10 @@ export const watches: Watch[] = [
       'Dual-time platinum resonance mechanism — a philosophical exploration of harmonic frequency regulation.',
     investmentNote:
       'Discontinued and historically important. Increasingly museum-level interest.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1622434641406-a158105c9168?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/watches/fpj-resonance/1.jpg',
+    additionalImages: [
+      '/images/watches/fpj-resonance/2.jpg'
+    ],
     status: 'Reserved'
   },
   {
