@@ -80,7 +80,7 @@ export const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile Nav Overlay */}
-      <div className={`fixed inset-0 bg-charcoal-900 z-[60] flex flex-col justify-center items-center transition-all duration-300 md:hidden ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+      <div className={`fixed inset-0 bg-charcoal-900 z-[60] flex flex-col justify-center items-center transition-opacity duration-200 md:hidden ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
         {/* Close Button */}
         <button
           onClick={() => setIsOpen(false)}
