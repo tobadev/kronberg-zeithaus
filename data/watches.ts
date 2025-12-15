@@ -240,7 +240,7 @@ export const watches: Watch[] = [
     condition: 'Ungetragen',
     boxPapers: 'Komplettset',
     description:
-      'Sportuhr mit platiniertem Rand, Grain-d'orge-Guilloche und ultraflachem Mikrorotor.',
+      'Sportuhr mit platiniertem Rand, Grain-d\'orge-Guilloche und ultraflachem Mikrorotor.',
     investmentNote:
       'Klassenfuehrende Veredelung und zunehmendes Interesse institutioneller Kaeufer foerdern stabiles Wachstum.',
     imageUrl:
