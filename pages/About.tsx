@@ -6,7 +6,7 @@ export const About: React.FC = () => {
   return (
     <div className="pt-32 pb-24 px-6 animate-fade-in">
       <div className="max-w-4xl mx-auto">
-        <SectionHeading title="Philosophy" subtitle="The Kronberg Standard" />
+        <SectionHeading title="About" subtitle="The Kronberg Standard" />
         
         <div className="prose prose-invert prose-lg mx-auto font-light text-zinc-300 space-y-8 leading-loose">
           <p>
