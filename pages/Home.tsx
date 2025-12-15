@@ -72,7 +72,7 @@ export const Home: React.FC = () => {
           <div className="absolute inset-0 bg-charcoal-900/60 z-10" />
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900 via-transparent to-transparent z-10" />
           <img 
-            src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&w=1920&q=80" 
+            src="https://hodinkee.imgix.net/uploads/images/9da0c002-aadc-4363-a3de-3f82be4b1e0b/PTK-KY6TP7-lifestyle-landscape.jpg?ixlib=rails-1.1.0&fm=jpg&q=55&auto=format&usm=12&fit=crop&ch=Width%2CDPR%2CSave-Data&alt" 
             alt="Macro detail of luxury timepiece movement" 
             className="w-full h-full object-cover animate-[subtle-zoom_20s_ease-in-out_infinite]"
           />
