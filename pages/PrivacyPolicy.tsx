@@ -9,49 +9,58 @@ export const PrivacyPolicy: React.FC = () => {
   return (
     <div className="pt-32 pb-24 px-6 bg-charcoal-900 min-h-screen animate-fade-in">
       <div className="max-w-3xl mx-auto">
-        <SectionHeading title="Datenschutzerklärung" subtitle="Privacy Policy" />
+        <SectionHeading title="Datenschutzerklaerung" subtitle="Datenschutz & Vertraulichkeit" />
         
         <div className="prose prose-invert prose-zinc text-zinc-300 space-y-8 text-sm leading-relaxed">
           <p className="font-serif italic text-lg text-zinc-400">
-            The privacy of our clients is paramount. Below outlines how Kronberg Zeithaus collects and protects your data.
+            Der Schutz Ihrer persoenlichen Daten hat fuer Kronberg Zeithaus oberste Prioritaet. Nachfolgend erlaeutern wir, welche Informationen wir erheben, wie wir sie verarbeiten und welche Rechte Ihnen zustehen.
           </p>
 
           <div>
             <h3 className="text-white font-serif text-lg mb-2">1. Datenschutz auf einen Blick</h3>
             <p>
-              <strong>Allgemeine Hinweise:</strong> Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
+              <strong>Allgemeine Hinweise:</strong> Wenn Sie diese Website besuchen, werden unterschiedliche personenbezogene Daten erhoben. Personenbezogene Daten sind Informationen, mit denen Sie persoenlich identifiziert werden koennen. Die vorliegenden Hinweise geben einen ueberblick darueber, was mit Ihren Daten geschieht.
             </p>
           </div>
 
           <div>
-            <h3 className="text-white font-serif text-lg mb-2">2. Allgemeine Hinweise und Pflichtinformationen</h3>
+            <h3 className="text-white font-serif text-lg mb-2">2. Verantwortliche Stelle & Kontakt</h3>
             <p>
-              <strong>Datenschutz:</strong> Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+              <strong>Verantwortlich:</strong><br/>
+              Kronberg Zeithaus GmbH<br/>
+              Maximilianstrasse 14<br/>
+              80539 Muenchen<br/>
+              E-Mail: privacy@kronbergzeithaus.de
             </p>
             <p className="mt-4">
-              <strong>Hinweis zur verantwortlichen Stelle:</strong><br/>
-              Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:<br/><br/>
-              Kronberg Zeithaus GmbH<br/>
-              Maximilianstraße 14<br/>
-              80539 München<br/>
-              E-Mail: concierge@kronbergzeithaus.de
+              Wir behandeln Ihre personenbezogenen Daten vertraulich und gemaess den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklaerung.
             </p>
           </div>
 
           <div>
             <h3 className="text-white font-serif text-lg mb-2">3. Datenerfassung auf unserer Website</h3>
             <p>
-              <strong>Cookies:</strong> Unsere Internetseiten verwenden so genannte „Cookies“. Cookies sind kleine Textdateien und richten auf Ihrem Endgerät keinen Schaden an. Sie dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen.
+              <strong>Server-Logs:</strong> Unser Hosting-Anbieter erhebt automatisch technische Daten (z. B. Browsertyp, Betriebssystem, Zeitpunkt des Seitenaufrufs). Diese Daten dienen ausschliesslich der Gewaehrleistung eines stoerungsfreien Betriebs und werden nicht mit anderen Datenquellen zusammengefuehrt.
             </p>
             <p className="mt-4">
-              <strong>Kontaktformular:</strong> Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+              <strong>Cookies:</strong> Naehere Informationen finden Sie in unserer Cookie-Richtlinie. Sie haben jederzeit die Moeglichkeit, Ihre Einwilligungen anzupassen oder Cookies zu deaktivieren.
+            </p>
+            <p className="mt-4">
+              <strong>Kontaktformulare:</strong> Wenn Sie uns Anfragen uebermitteln, nutzen wir die angegebenen Daten (Name, Kontakt, Inhalt der Nachricht) ausschliesslich zur Bearbeitung Ihres Anliegens sowie fuer moegliche Rueckfragen. Eine Weitergabe findet ohne Ihre Einwilligung nicht statt.
             </p>
           </div>
 
           <div>
-            <h3 className="text-white font-serif text-lg mb-2">4. Client Confidentiality</h3>
+            <h3 className="text-white font-serif text-lg mb-2">4. Vertraulichkeit der Mandate</h3>
             <p>
-              As a purveyor of high-value assets, we adhere to strict confidentiality protocols. Information shared regarding specific acquisitions or sales is accessible only to senior management and is never shared with third-party marketing entities.
+              Als diskreter Handelspartner fuer hochwertige Uhren beschraenken wir den Zugriff auf sensible Informationen auf einen engen Kreis fuehrender Mitarbeitender. Daten zu Transaktionen, Ankaufswuenschen oder Sammlungsdetails werden nicht zu Marketingzwecken weitergegeben und ausschliesslich auf Servern innerhalb der EU verarbeitet.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-white font-serif text-lg mb-2">5. Ihre Rechte</h3>
+            <p>
+              Sie haben jederzeit das Recht auf unentgeltliche Auskunft ueber Herkunft, Empfaenger und Zweck Ihrer gespeicherten personenbezogenen Daten. Zudem koennen Sie die Berichtigung, Sperrung oder Loeschung dieser Daten verlangen. Hierzu sowie zu weiteren Fragen zum Datenschutz koennen Sie sich jederzeit an uns wenden.
             </p>
           </div>
         </div>

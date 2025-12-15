@@ -11,7 +11,6 @@ export const RequestInformationForm: React.FC<RequestInformationFormProps> = ({ 
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Frontend only - just show success state
     setTimeout(() => setSubmitted(true), 500);
   };
 
@@ -19,9 +18,9 @@ export const RequestInformationForm: React.FC<RequestInformationFormProps> = ({ 
     return (
       <div className="text-center py-12">
         <CheckCircle className="w-16 h-16 text-gold-500 mx-auto mb-6" />
-        <h3 className="font-serif text-2xl text-white mb-3">Request Received</h3>
+        <h3 className="font-serif text-2xl text-white mb-3">Anfrage eingegangen</h3>
         <p className="text-zinc-400 max-w-md mx-auto leading-relaxed">
-          Thank you for your interest. A Kronberg advisor will review your confidential inquiry and respond within 24 hours (CET).
+          Vielen Dank fuer Ihr Interesse. Eine Beraterin oder ein Berater von Kronberg meldet sich innerhalb von 24 Stunden (CET) mit einer persoenlichen Rueckmeldung.
         </p>
       </div>
     );
@@ -31,20 +30,16 @@ export const RequestInformationForm: React.FC<RequestInformationFormProps> = ({ 
     <div>
       <div className="mb-8">
         <div className="w-12 h-0.5 bg-gold-500 mb-4"></div>
-        <h2 className="font-serif text-3xl text-white mb-2">Confidential Acquisition Inquiry</h2>
-        <p className="text-zinc-400 text-sm leading-relaxed">
-          A confidential request does not initiate a transaction — it begins a dialogue. Share your objectives, horizon, and reference of interest, and a curator will respond personally.
-        </p>
+        <h2 className="font-serif text-3xl text-white mb-2">Vertrauliche Ankaufsanfrage</h2>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">
-        {/* Watch of Interest - Read Only */}
         <div>
           <label className="block text-xs uppercase tracking-widest text-zinc-500 mb-2">
-            Watch of Interest
+            Gesuchtes Modell
           </label>
           <div className="bg-zinc-900/50 border border-zinc-800 px-4 py-3 text-zinc-400 text-sm">
-            {watch.brand} {watch.model} — Ref. {watch.reference}
+            {watch.brand} {watch.model} - Ref. {watch.reference}
           </div>
         </div>
 
@@ -61,7 +56,7 @@ export const RequestInformationForm: React.FC<RequestInformationFormProps> = ({ 
           </div>
           <div>
             <label className="block text-xs uppercase tracking-widest text-zinc-500 mb-2">
-              Email
+              E-Mail
             </label>
             <input
               type="email"
@@ -73,22 +68,22 @@ export const RequestInformationForm: React.FC<RequestInformationFormProps> = ({ 
 
         <div>
           <label className="block text-xs uppercase tracking-widest text-zinc-500 mb-2">
-            Region / City (Optional)
+            Region / Stadt (optional)
           </label>
           <input
             type="text"
-            placeholder="e.g. München, Zürich, London"
+            placeholder="z. B. Muenchen, Zuerich, London"
             className="w-full bg-zinc-900 border border-zinc-800 text-white px-4 py-3 focus:outline-none focus:border-gold-500 transition-colors placeholder:text-zinc-600"
           />
         </div>
 
         <div>
           <label className="block text-xs uppercase tracking-widest text-zinc-500 mb-2">
-            Message
+            Nachricht
           </label>
           <textarea
             rows={5}
-            placeholder="Acquisition goals, budget considerations, timing expectations..."
+            placeholder="Ankaufsziel, Budgetrahmen, Zeithorizont..."
             className="w-full bg-zinc-900 border border-zinc-800 text-white px-4 py-3 focus:outline-none focus:border-gold-500 transition-colors placeholder:text-zinc-600"
           ></textarea>
         </div>
@@ -97,7 +92,7 @@ export const RequestInformationForm: React.FC<RequestInformationFormProps> = ({ 
           type="submit"
           className="w-full bg-gold-500 text-charcoal-950 py-4 text-xs uppercase tracking-widest font-medium hover:bg-white transition-colors duration-300"
         >
-          Request Briefing
+          Briefing anfordern
         </button>
       </form>
     </div>

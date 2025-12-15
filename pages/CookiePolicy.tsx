@@ -9,40 +9,40 @@ export const CookiePolicy: React.FC = () => {
   return (
     <div className="pt-32 pb-24 px-6 bg-charcoal-900 min-h-screen animate-fade-in">
       <div className="max-w-3xl mx-auto">
-        <SectionHeading title="Cookie-Richtlinie" subtitle="Usage & Preferences" />
+        <SectionHeading title="Cookie-Richtlinie" subtitle="Nutzung & Praeferenzen" />
         
         <div className="prose prose-invert prose-zinc text-zinc-300 space-y-8 text-sm leading-relaxed">
           
           <div>
-            <h3 className="text-white font-serif text-lg mb-2">What are Cookies?</h3>
+            <h3 className="text-white font-serif text-lg mb-2">Was sind Cookies?</h3>
             <p>
-              Cookies are small text files that are stored on your computer or mobile device when you visit a website. They allow the website to remember your actions and preferences (such as login, language, font size, and other display preferences) over a period of time, so you don't have to keep re-entering them whenever you come back to the site or browse from one page to another.
+              Cookies sind kleine Textdateien, die auf Ihrem Computer oder mobilen Endgeraet gespeichert werden, wenn Sie eine Website besuchen. Sie helfen der Seite, sich an Ihre Aktionen und Einstellungen zu erinnern - etwa Login, Sprache, Schriftgroesse oder Anzeigeoptionen - damit Sie diese nicht bei jedem Besuch erneut eingeben muessen.
             </p>
           </div>
 
           <div>
-            <h3 className="text-white font-serif text-lg mb-2">How We Use Cookies</h3>
+            <h3 className="text-white font-serif text-lg mb-2">Wie wir Cookies verwenden</h3>
             <p>
-              We use cookies for the following purposes:
+              Wir setzen Cookies fuer folgende Zwecke ein:
             </p>
             <ul className="list-disc pl-5 mt-2 space-y-2">
-              <li><strong>Essential Cookies:</strong> Required for the operation of the website (e.g., security, network management).</li>
-              <li><strong>Functional Cookies:</strong> Enhance the performance and functionality of our website (e.g., remembering your language settings).</li>
-              <li><strong>Analytics Cookies:</strong> Help us understand how visitors interact with the website by collecting and reporting information anonymously.</li>
+              <li><strong>Essenzielle Cookies:</strong> Fuer den Betrieb der Website erforderlich (z. B. Sicherheit, Sitzungssteuerung).</li>
+              <li><strong>Funktionale Cookies:</strong> Verbessern Leistung und Komfort, indem sie Einstellungen wie Sprache oder Ansicht merken.</li>
+              <li><strong>Analyse-Cookies:</strong> Ermoeglichen uns zu verstehen, wie Besuchende mit der Seite interagieren, indem Informationen anonym ausgewertet werden.</li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-white font-serif text-lg mb-2">Managing Your Preferences</h3>
+            <h3 className="text-white font-serif text-lg mb-2">Ihre Praeferenzen verwalten</h3>
             <p>
-              You can control and/or delete cookies as you wish. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. If you do this, however, you may have to manually adjust some preferences every time you visit a site and some services and functionalities may not work.
+              Sie koennen Cookies nach Belieben kontrollieren und/oder loeschen. Sie koennen saemtliche Cookies auf Ihrem Geraet entfernen und viele Browser so konfigurieren, dass keine neuen Cookies gesetzt werden. In diesem Fall muessen Sie jedoch moeglicherweise bestimmte Einstellungen bei jedem Besuch erneut vornehmen und manche Dienste funktionieren moeglicherweise eingeschraenkt.
             </p>
           </div>
 
           <div className="bg-charcoal-950 border border-zinc-800 p-6 rounded-sm mt-8">
-            <h4 className="text-gold-500 text-xs uppercase tracking-widest mb-2">Current Status</h4>
+            <h4 className="text-gold-500 text-xs uppercase tracking-widest mb-2">Aktueller Status</h4>
             <p>
-              Your current consent state: <span className="text-white font-mono">{localStorage.getItem('kronberg_cookie_consent') || 'Not Set'}</span>
+              Ihr aktueller Einwilligungsstatus: <span className="text-white font-mono">{localStorage.getItem('kronberg_cookie_consent') || 'Nicht gesetzt'}</span>
             </p>
           </div>
 

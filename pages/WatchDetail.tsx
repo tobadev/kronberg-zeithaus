@@ -31,8 +31,8 @@ export const WatchDetail: React.FC = () => {
     return (
       <div className="h-screen flex items-center justify-center bg-charcoal-900 text-white">
         <div className="text-center">
-          <h2 className="text-2xl font-serif mb-4">Timepiece Not Found</h2>
-          <NavLink to="/watches" className="text-gold-500 border-b border-gold-500 pb-1 uppercase tracking-widest text-xs">Return to Collection</NavLink>
+          <h2 className="text-2xl font-serif mb-4">Uhr nicht gefunden</h2>
+          <NavLink to="/watches" className="text-gold-500 border-b border-gold-500 pb-1 uppercase tracking-widest text-xs">Zurueck zur Kollektion</NavLink>
         </div>
       </div>
     );
@@ -45,7 +45,7 @@ export const WatchDetail: React.FC = () => {
           onClick={() => navigate('/watches')}
           className="flex items-center text-zinc-500 hover:text-white transition-colors mb-8 text-xs uppercase tracking-widest"
         >
-          <ArrowLeft className="w-4 h-4 mr-2" /> Back to Collection
+          <ArrowLeft className="w-4 h-4 mr-2" /> Zurueck zur Kollektion
         </button>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -101,10 +101,10 @@ export const WatchDetail: React.FC = () => {
              ) : (
                <div className="grid grid-cols-2 gap-4">
                  <div className="aspect-square bg-zinc-900/50 border border-zinc-800 flex items-center justify-center text-zinc-700 text-xs tracking-widest uppercase">
-                    Detail Shot 1
+                    Detailaufnahme 1
                  </div>
                  <div className="aspect-square bg-zinc-900/50 border border-zinc-800 flex items-center justify-center text-zinc-700 text-xs tracking-widest uppercase">
-                    Detail Shot 2
+                    Detailaufnahme 2
                  </div>
                </div>
              )}
@@ -133,23 +133,23 @@ export const WatchDetail: React.FC = () => {
              {/* Specs Grid */}
              <div className="grid grid-cols-2 gap-y-6 gap-x-4 border-t border-b border-zinc-800 py-8 mb-8">
                 <div>
-                    <p className="text-xs uppercase tracking-widest text-zinc-500 mb-1">Year</p>
+                    <p className="text-xs uppercase tracking-widest text-zinc-500 mb-1">Baujahr</p>
                     <p className="text-white font-serif">{watch.year}</p>
                 </div>
                 <div>
-                    <p className="text-xs uppercase tracking-widest text-zinc-500 mb-1">Case Size</p>
+                    <p className="text-xs uppercase tracking-widest text-zinc-500 mb-1">Gehaeusedurchmesser</p>
                     <p className="text-white font-serif">{watch.caseSize}</p>
                 </div>
                 <div>
-                    <p className="text-xs uppercase tracking-widest text-zinc-500 mb-1">Movement</p>
+                    <p className="text-xs uppercase tracking-widest text-zinc-500 mb-1">Kaliber</p>
                     <p className="text-white font-serif">{watch.movement}</p>
                 </div>
                 <div>
-                    <p className="text-xs uppercase tracking-widest text-zinc-500 mb-1">Condition</p>
+                    <p className="text-xs uppercase tracking-widest text-zinc-500 mb-1">Zustand</p>
                     <p className="text-white font-serif">{watch.condition}</p>
                 </div>
                 <div className="col-span-2">
-                    <p className="text-xs uppercase tracking-widest text-zinc-500 mb-1">Scope of Delivery</p>
+                    <p className="text-xs uppercase tracking-widest text-zinc-500 mb-1">Lieferumfang</p>
                     <p className="text-white font-serif flex items-center gap-2">
                         {watch.boxPapers} <CheckCircle2 className="w-4 h-4 text-gold-500" />
                     </p>
@@ -160,7 +160,7 @@ export const WatchDetail: React.FC = () => {
              <div className="bg-charcoal-950/50 p-6 border-l-2 border-gold-500 mb-10">
                 <div className="flex items-center gap-2 mb-2 text-gold-500">
                     <TrendingUp className="w-4 h-4" />
-                    <span className="text-xs uppercase tracking-widest">Investment Note</span>
+                    <span className="text-xs uppercase tracking-widest">Investment-Notiz</span>
                 </div>
                 <p className="text-zinc-400 text-sm italic font-serif">
                    "{watch.investmentNote}"
@@ -173,11 +173,11 @@ export const WatchDetail: React.FC = () => {
                     onClick={() => setIsModalOpen(true)}
                     className="block w-full text-center bg-white text-charcoal-950 py-4 text-sm uppercase tracking-widest font-bold hover:bg-gold-500 transition-colors duration-300"
                  >
-                    Request Information
+                    Informationen anfordern
                  </button>
                  <p className="text-center text-zinc-600 text-xs mt-4">
                     <Shield className="w-3 h-3 inline mr-1" />
-                    Insured worldwide shipping available
+                    Versicherter weltweiter Versand moeglich
                  </p>
              </div>
           </div>

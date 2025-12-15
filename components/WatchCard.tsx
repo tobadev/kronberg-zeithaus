@@ -61,7 +61,7 @@ export const WatchCard: React.FC<WatchCardProps> = ({ watch }) => {
         </p>
         
         <div className="mt-auto flex items-center text-xs tracking-widest uppercase text-white hover:text-gold-500 transition-colors group/btn">
-          View Details
+          Details ansehen
           <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1 text-gold-500" />
         </div>
       </div>

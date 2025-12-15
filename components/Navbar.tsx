@@ -37,9 +37,9 @@ export const Navbar: React.FC = () => {
   }, [isOpen]);
 
   const navLinks = [
-    { name: 'Collection', path: '/watches' },
-    { name: 'About', path: '/about' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Kollektion', path: '/watches' },
+    { name: 'Ueber uns', path: '/about' },
+    { name: 'Kontakt', path: '/contact' },
   ];
 
   return (
@@ -51,7 +51,7 @@ export const Navbar: React.FC = () => {
           </div>
           <div className="flex flex-col">
             <span className="font-serif text-lg tracking-wider text-white">KRONBERG</span>
-            <span className="font-sans text-[0.6rem] tracking-[0.3em] text-zinc-400 uppercase">Zeithaus München</span>
+            <span className="font-sans text-[0.6rem] tracking-[0.3em] text-zinc-400 uppercase">Zeithaus Muenchen</span>
           </div>
         </NavLink>
 
@@ -85,7 +85,7 @@ export const Navbar: React.FC = () => {
         <button
           onClick={() => setIsOpen(false)}
           className="absolute top-6 right-6 text-zinc-300 hover:text-gold-500 transition-colors"
-          aria-label="Close menu"
+          aria-label="Menue schliessen"
         >
           <X className="w-8 h-8" />
         </button>

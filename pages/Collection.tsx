@@ -6,32 +6,32 @@ import { watches } from '../data/watches';
 import { useLocation } from 'react-router-dom';
 
 export const Collection: React.FC = () => {
-  const [filter, setFilter] = useState('All');
+  const [filter, setFilter] = useState('Alle');
   const location = useLocation();
 
   // Reset filter when returning to collection page
   useEffect(() => {
-    setFilter('All');
+    setFilter('Alle');
   }, [location.pathname]);
 
   // Define available filters
   const filters = [
-    'All',
+    'Alle',
     'F.P. Journe',
-    'A. Lange & Söhne',
+    'A. Lange & Soehne',
     'Patek Philippe',
     'Vacheron Constantin',
     'Richard Mille',
-    'Independent Ateliers'
+    'Unabhaengige Ateliers'
   ];
 
   // Filtering logic
   const filteredWatches = watches.filter((watch) => {
-    if (filter === 'All') return true;
-    if (filter === 'Independent Ateliers') {
+    if (filter === 'Alle') return true;
+    if (filter === 'Unabhaengige Ateliers') {
       return ![
         'F.P. Journe',
-        'A. Lange & Söhne',
+        'A. Lange & Soehne',
         'Patek Philippe',
         'Vacheron Constantin',
         'Richard Mille'
@@ -44,8 +44,8 @@ export const Collection: React.FC = () => {
     <div className="pt-32 pb-24 px-6 bg-charcoal-900 min-h-screen animate-fade-in">
       <div className="max-w-7xl mx-auto">
         <SectionHeading 
-          title="The Collection" 
-          subtitle="Available for immediate acquisition or consultation" 
+          title="Die Kollektion" 
+          subtitle="Verfuegbar fuer sofortige Vermittlung oder Beratung" 
         />
         
         <div className="mb-12 flex flex-wrap justify-center gap-x-8 gap-y-4 border-b border-zinc-800 pb-4">
@@ -59,7 +59,7 @@ export const Collection: React.FC = () => {
                     : 'text-zinc-500 hover:text-zinc-300'
                 }`}
               >
-                {item === 'All' ? 'All Timepieces' : item}
+                {item === 'Alle' ? 'Alle Uhren' : item}
               </button>
             ))}
         </div>
@@ -78,18 +78,18 @@ export const Collection: React.FC = () => {
           </motion.div>
         ) : (
           <div className="text-center py-24 border border-zinc-800/50 rounded-sm">
-            <p className="text-zinc-500 font-serif italic text-lg">No timepieces currently displayed for this selection.</p>
-            <p className="text-zinc-600 text-xs mt-2 uppercase tracking-widest">Please inquire for off-catalog inventory</p>
+            <p className="text-zinc-500 font-serif italic text-lg">Keine Uhren fuer diese Auswahl sichtbar.</p>
+            <p className="text-zinc-600 text-xs mt-2 uppercase tracking-widest">Fuer Off-Katalog-Bestand bitte anfragen</p>
           </div>
         )}
 
         <div className="mt-24 p-12 border border-zinc-800 bg-charcoal-950 text-center max-w-3xl mx-auto">
-          <h3 className="font-serif text-2xl text-white mb-4">Seeking a Specific Reference?</h3>
+          <h3 className="font-serif text-2xl text-white mb-4">Sie suchen eine bestimmte Referenz?</h3>
           <p className="text-zinc-400 mb-8 max-w-xl mx-auto leading-relaxed">
-            Our sourcing team specializes in locating hard-to-find models. Submit a request detailing your desired reference, and we will utilize our network to procure it for you.
+            Unser Sourcing-Team findet schwer zugangliche Modelle ueber ein vertrauliches Netzwerk. Beschreiben Sie Ihre Wunschreferenz, wir uebernehmen die diskrete Beschaffung.
           </p>
           <a href="#/contact" className="inline-block bg-zinc-100 text-charcoal-950 px-8 py-3 text-xs uppercase tracking-widest font-medium hover:bg-gold-500 hover:text-white transition-colors">
-            Submit Sourcing Request
+            Anfrage senden
           </a>
         </div>
       </div>

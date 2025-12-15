@@ -14,9 +14,9 @@ export const TeamSection: React.FC = () => {
       <div className="max-w-5xl mx-auto px-6">
         <div className="text-center mb-16">
           <div className="w-16 h-0.5 bg-gold-500 mx-auto mb-6"></div>
-          <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">The Team</h2>
+          <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">Das Team</h2>
           <p className="text-zinc-400 text-sm max-w-2xl mx-auto leading-relaxed">
-            Our team reflects the mindset of the region — specialists who prefer rigor over noise. Each member focuses on a single discipline: acquisition, provenance research, authentication, or institutional coordination. No assistants, no offshore routing, no volume targets. Every request receives senior attention from the beginning.
+            Unser Team arbeitet wie die Region selbst: fachlich fokussiert, leise und praezise. Jede Person verantwortet eine Disziplin - Ankauf, Provenienz, Authentifizierung oder institutionelle Betreuung. Keine Assistenten, keine Auslagerung, keine Volumenziele. Jede Anfrage erhaelt von Beginn an Senior-Aufmerksamkeit.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ export const TeamSection: React.FC = () => {
 
         <div className="mt-16 text-center">
           <p className="text-xs text-zinc-500 italic">
-            For confidential introductions, please use the contact form.
+            Fuer vertrauliche Vorstellungen nutzen Sie bitte das Kontaktformular.
           </p>
         </div>
       </div>

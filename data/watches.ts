@@ -4,63 +4,63 @@ export const watches: Watch[] = [
   {
     id: 'fpj-bleu',
     brand: 'F.P. Journe',
-    model: 'Chronomètre Bleu',
+    model: 'Chronometre Bleu',
     reference: 'CB-40-Ti',
     year: '2022',
     caseSize: '39mm',
     movement: 'Calibre 1304',
-    condition: 'Mint',
-    boxPapers: 'Full Set',
+    condition: 'Neuwertig',
+    boxPapers: 'Komplettset',
     description:
-      'Tantalum case with a deep chrome-blue dial. A modern icon of independent watchmaking with exceptionally low production.',
+      'Tantalgehaeuse mit tiefblauem Chromzifferblatt. Eine moderne Ikone der unabhaengigen Uhrmacherei mit extrem niedriger Stueckzahl.',
     investmentNote:
-      'Extremely limited output and longstanding waitlists continue to elevate secondary market valuations.',
+      'Die minimalen Kapazitaeten und jahrzehntelangen Wartelisten halten das Preisniveau am Sekundaermarkt konstant hoch.',
     imageUrl: '/images/watches/fpj-bleu/1.jpg',
     additionalImages: [
       '/images/watches/fpj-bleu/2.jpg'
     ],
-    status: 'By Private Request'
+    status: 'Nur auf Anfrage'
   },
   {
     id: 'lange-datograph',
-    brand: 'A. Lange & Söhne',
+    brand: 'A. Lange & Soehne',
     model: 'Datograph Up/Down',
     reference: '405.035',
     year: '2019',
     caseSize: '41mm',
     movement: 'Calibre L951.6',
-    condition: 'Mint',
-    boxPapers: 'Full Set',
+    condition: 'Neuwertig',
+    boxPapers: 'Komplettset',
     description:
-      'Platinum case and hand-finished movement architecture. Considered the benchmark high-complication chronograph.',
+      'Platingehaeuse mit handfinisher Werkarchitektur. Gilt als Referenz fuer hochkomplexe Chronographen.',
     investmentNote:
-      'Institutional collectors consistently acquire Datographs for long-term portfolio positioning.',
+      'Institutionelle Sammler sichern sich Datograph-Varianten konsequent fuer langfristige Portfolios.',
     imageUrl: '/images/watches/lange-datograph/1.png',
     additionalImages: [
       '/images/watches/lange-datograph/2.png'
     ],
-    status: 'Available for Consultation'
+    status: 'Nach Terminabstimmung verfuegbar'
   },
   {
     id: 'patek-5070g',
     brand: 'Patek Philippe',
-    model: 'Chronograph',
+    model: 'Chronograph 5070G',
     reference: '5070G',
     year: '2005',
     caseSize: '42mm',
     movement: 'Calibre CH 27-70',
-    condition: 'Collector-Grade',
-    boxPapers: 'Archive Extract',
+    condition: 'Sammlerzustand',
+    boxPapers: 'Archivauszug',
     description:
-      'Discontinued white-gold chronograph with restrained production and a historically significant Lemania-based calibre.',
+      'Eingestellter Weissgold-Chronograph mit streng limitierter Produktion und historisch bedeutsamem Lemania-Kaliber.',
     investmentNote:
-      'Auction performance remains strong due to cultural and mechanical relevance.',
+      'Auktionsresultate bleiben aufgrund kultureller und technischer Bedeutung auf hohem Niveau.',
     imageUrl: '/images/watches/5070g/1.jpg',
     additionalImages: [
       '/images/watches/5070g/2.jpg',
       '/images/watches/5070g/3.jpg'
     ],
-    status: 'Reserved'
+    status: 'Reserviert'
   },
   {
     id: 'vc-1921',
@@ -70,19 +70,19 @@ export const watches: Watch[] = [
     year: '2023',
     caseSize: '40mm',
     movement: 'Calibre 4400 AS',
-    condition: 'Unworn',
-    boxPapers: 'Full Set',
+    condition: 'Ungetragen',
+    boxPapers: 'Komplettset',
     description:
-      'Rose-gold reinterpretation of a 1920s driver\'s watch with an off-center dial and cushion case.',
+      'Rosegoldene Neuinterpretation einer 1920er Fahreruhr mit versetztem Zifferblatt und Kissengehaeuse.',
     investmentNote:
-      'Production scarcity and unique design identity support long-term collectability.',
+      'Seltene Produktion und eigenstaendige Gestaltung sichern langfristige Begehrlichkeit.',
     imageUrl:
       'https://www.vacheron-constantin.com/dam/rcq/vac/14/64/15/2/1464152.png.transform.vacdetailhd.png',
     additionalImages: [
       'https://www.vacheron-constantin.com/dam/rcq/vac/JG/jO/al/m5/RH/iU/4M/G7/XC/eY/9Q/JGjOalm5RHiU4MG7XCeY9Q.jpeg.transform.vacdetailhd.jpeg',
       'https://www.vacheron-constantin.com/dam/rcq/vac/iB/A9/cj/4r/Tx/yx/8k/I8/b3/RN/uw/iBA9cj4rTxyx8kI8b3RNuw.jpeg.transform.vacdetailhd.jpeg'
     ],
-    status: 'Available for Consultation'
+    status: 'Nach Terminabstimmung verfuegbar'
   },
   {
     id: 'rm005',
@@ -91,18 +91,18 @@ export const watches: Watch[] = [
     reference: 'RM005-Ti',
     year: '2016',
     caseSize: '38.7mm',
-    movement: 'Vaucher-based automatic',
-    condition: 'Excellent',
-    boxPapers: 'Full Set',
+    movement: 'Vaucher-basiertes Automatikwerk',
+    condition: 'Exzellent',
+    boxPapers: 'Komplettset',
     description:
-      'Early-generation titanium RM showcasing the architectural design that defined the brand\'s trajectory.',
+      'Titanmodell der ersten Generation, das die architektonische Designsprache der Marke praegte.',
     investmentNote:
-      'Collectors increasingly seek first-era references for historical relevance.',
+      'Fruehe RM-Referenzen werden zunehmend wegen ihrer historischen Bedeutung gesucht.',
     imageUrl: '/images/watches/rm005/1.jpg',
     additionalImages: [
       '/images/watches/rm005/2.jpg'
     ],
-    status: 'Acquisition Ongoing'
+    status: 'Ankauf in Arbeit'
   },
   {
     id: 'breguet-tradition',
@@ -112,14 +112,14 @@ export const watches: Watch[] = [
     year: '2020',
     caseSize: '40mm',
     movement: 'Calibre 505SR1',
-    condition: 'Mint',
-    boxPapers: 'Full Set',
+    condition: 'Neuwertig',
+    boxPapers: 'Komplettset',
     description:
-      'Symmetrical exposed movement inspired by Abraham-Louis Breguet’s souscription pocket watches.',
+      'Symmetrisch offenes Uhrwerk inspiriert von Abraham-Louis Breguets Souscription-Taschenuhren.',
     investmentNote:
-      'Growing academic recognition elevates historical Breguet references into serious collectibles.',
+      'Wachsende akademische Anerkennung hebt historische Breguet-Referenzen in die Liga ernsthafter Sammlerstuecke.',
     imageUrl: '/images/watches/breguet-tradition/1.jpg',
-    status: 'By Private Request'
+    status: 'Nur auf Anfrage'
   },
   {
     id: 'db28',
@@ -129,33 +129,33 @@ export const watches: Watch[] = [
     year: '2021',
     caseSize: '42.6mm',
     movement: 'Calibre DB2115V4',
-    condition: 'Mint',
-    boxPapers: 'Full Set',
+    condition: 'Neuwertig',
+    boxPapers: 'Komplettset',
     description:
-      'Distinct floating-lug architecture with hand-finished titanium components and a three-dimensional moonphase.',
+      'Schwebende Bandanstosskonstruktion mit handfinishten Titanbauteilen und dreidimensionaler Mondphase.',
     investmentNote:
-      'Independent production scale and rapid institutional adoption drive upward momentum.',
+      'Unabhaengige Produktion und schnelle Akzeptanz bei Institutionen treiben die Nachfrage.',
     imageUrl:
       'https://images.unsplash.com/photo-1622434641406-a158105c9168?auto=format&fit=crop&w=800&q=80',
-    status: 'Available for Consultation'
+    status: 'Nach Terminabstimmung verfuegbar'
   },
   {
     id: 'gronefeld-1941',
-    brand: 'Grönefeld',
+    brand: 'Gronefeld',
     model: '1941 Principia',
     reference: 'PRINC-18WG',
     year: '2020',
     caseSize: '39.5mm',
     movement: 'Calibre G-06',
-    condition: 'Collector-Grade',
-    boxPapers: 'Full Set',
+    condition: 'Sammlerzustand',
+    boxPapers: 'Komplettset',
     description:
-      'White-gold dress watch from the Horological Brothers featuring a hand-finished micro-rotor movement.',
+      'Weissgoldene Dresswatch der Horological Brothers mit handfinishtem Mikrorotor.',
     investmentNote:
-      'Annual output remains under 200 pieces, reinforcing exclusivity.',
+      'Jaehrliche Produktion unter 200 Stueck garantiert Exklusivitaet.',
     imageUrl:
       'https://images.unsplash.com/photo-1629581352317-0c7531a3994c?auto=format&fit=crop&w=800&q=80',
-    status: 'Reserved'
+    status: 'Reserviert'
   },
   {
     id: 'voutilainen-28ti',
@@ -165,15 +165,15 @@ export const watches: Watch[] = [
     year: '2018',
     caseSize: '39mm',
     movement: 'Calibre 28',
-    condition: 'Collector-Grade',
-    boxPapers: 'Full Set + Service Papers',
+    condition: 'Sammlerzustand',
+    boxPapers: 'Komplettset + Serviceunterlagen',
     description:
-      'Titanium case and guilloché dial executed entirely in-house — a signature of artisanal independent watchmaking.',
+      'Titangehaeuse mit hauseigener Guilloche und offener Rueckseite - ein Markenzeichen pure artisanaler Uhrmacherei.',
     investmentNote:
-      'Extremely limited production ensures long-term scarcity.',
+      'Aeusserst geringe Produktionszahlen sichern langfristige Knappheit.',
     imageUrl:
       'https://images.unsplash.com/photo-1622434641406-a158105c9168?auto=format&fit=crop&w=800&q=80',
-    status: 'By Private Request'
+    status: 'Nur auf Anfrage'
   },
   {
     id: 'mf-lm101',
@@ -182,16 +182,16 @@ export const watches: Watch[] = [
     reference: 'LM101WG',
     year: '2022',
     caseSize: '40mm',
-    movement: 'LM101-in-house',
-    condition: 'Unworn',
-    boxPapers: 'Full Set',
+    movement: 'LM101 in-house',
+    condition: 'Ungetragen',
+    boxPapers: 'Komplettset',
     description:
-      'Floating balance wheel architecture inspired by classical 19th-century horology, reinterpreted futuristically.',
+      'Schwebende Unruh inspiriert von der Uhrmacherei des 19. Jahrhunderts, futuristisch neu interpretiert.',
     investmentNote:
-      'Institutional collectors increasingly target early LM series pieces.',
+      'Fruehe Legacy-Machine-Serien werden zunehmend von Sammlern institutionell platziert.',
     imageUrl:
       'https://images.unsplash.com/photo-1594576722512-582bcd46fba3?auto=format&fit=crop&w=800&q=80',
-    status: 'Available for Consultation'
+    status: 'Nach Terminabstimmung verfuegbar'
   },
   {
     id: 'moser-streamliner',
@@ -201,33 +201,33 @@ export const watches: Watch[] = [
     year: '2023',
     caseSize: '40mm',
     movement: 'Calibre HMC 200',
-    condition: 'Unworn',
-    boxPapers: 'Full Set',
+    condition: 'Ungetragen',
+    boxPapers: 'Komplettset',
     description:
-      'Integrated bracelet, minimalist execution, and fumé dial signature define this contemporary collectible.',
+      'Integriertes Band, minimalistische Gestaltung und Fume-Zifferblatt definieren diesen zeitgenoessischen Klassiker.',
     investmentNote:
-      'Low production numbers continue to attract long-horizon buyers.',
+      'Geringe Stueckzahlen ziehen langfristig orientierte Kaeufer an.',
     imageUrl:
       'https://images.unsplash.com/photo-1629581352317-0c7531a3994c?auto=format&fit=crop&w=800&q=80',
-    status: 'Acquisition Ongoing'
+    status: 'Ankauf in Arbeit'
   },
   {
     id: 'urban-jurgensen',
-    brand: 'Urban Jürgensen',
+    brand: 'Urban Jurgensen',
     model: 'Reference 1741',
     reference: '1741WG',
     year: '2019',
     caseSize: '41mm',
     movement: 'P4 Hand-finished',
-    condition: 'Mint',
-    boxPapers: 'Full Set',
+    condition: 'Neuwertig',
+    boxPapers: 'Komplettset',
     description:
-      'Teardrop lugs, hand-turned guilloché dial, and artisanal finishing rooted in 18th-century Danish-Swiss heritage.',
+      'Tropfenfoermige Bandanstosse, handgedrehte Guilloche und handwerkliche Veredelung mit Wurzeln im 18. Jahrhundert.',
     investmentNote:
-      'Small-scale production contributes to rising secondary demand.',
+      'Kleinstserienproduktion fuehrt zu steigender Sekundaernachfrage.',
     imageUrl:
       'https://images.unsplash.com/photo-1629581352317-0c7531a3994c?auto=format&fit=crop&w=800&q=80',
-    status: 'Available for Consultation'
+    status: 'Nach Terminabstimmung verfuegbar'
   },
   {
     id: 'parmigiani-tonda',
@@ -237,15 +237,15 @@ export const watches: Watch[] = [
     year: '2022',
     caseSize: '40mm',
     movement: 'PF703 Micro-Rotor',
-    condition: 'Unworn',
-    boxPapers: 'Full Set',
+    condition: 'Ungetragen',
+    boxPapers: 'Komplettset',
     description:
-      'Refined platinum-bezel sports watch with grain-d\'orge guilloché dial and ultra-thin micro-rotor movement.',
+      'Sportuhr mit platiniertem Rand, Grain-d'orge-Guilloche und ultraflachem Mikrorotor.',
     investmentNote:
-      'Category-leading finishing and increasing institutional attention signal sustainable growth.',
+      'Klassenfuehrende Veredelung und zunehmendes Interesse institutioneller Kaeufer foerdern stabiles Wachstum.',
     imageUrl:
       'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=800&q=80',
-    status: 'Available for Consultation'
+    status: 'Nach Terminabstimmung verfuegbar'
   },
   {
     id: 'gf-handmade',
@@ -254,56 +254,56 @@ export const watches: Watch[] = [
     reference: 'HM1',
     year: '2020',
     caseSize: '43mm',
-    movement: 'Hand-manufactured',
-    condition: 'Collector-Grade',
-    boxPapers: 'Full Set',
+    movement: 'Handgefertigt',
+    condition: 'Sammlerzustand',
+    boxPapers: 'Komplettset',
     description:
-      'Over 6,000 hours of hand production. An extremely scarce technical and artistic milestone.',
+      'Ueber 6.000 Stunden reine Handarbeit - ein extrem rares technisches wie kuenstlerisches Statement.',
     investmentNote:
-      'Among the most significant modern horological works — institutional collectors only.',
+      'Zaehlt zu den bedeutendsten modernen Uhrenwerken; nur fuer institutionelle Sammler verfuegbar.',
     imageUrl:
       'https://images.unsplash.com/photo-1620625515032-6ed0c1790c75?auto=format&fit=crop&w=800&q=80',
-    status: 'By Private Request'
+    status: 'Nur auf Anfrage'
   },
   {
     id: 'fpj-resonance',
     brand: 'F.P. Journe',
-    model: 'Chronomètre à Résonance',
-    reference: 'RT-40Platinum',
+    model: 'Chronometre Resonance',
+    reference: 'RT-40-Platinum',
     year: '2017',
     caseSize: '40mm',
     movement: 'Calibre 1499.3',
-    condition: 'Collector-Grade',
-    boxPapers: 'Full Set + Service Papers',
+    condition: 'Sammlerzustand',
+    boxPapers: 'Komplettset + Serviceunterlagen',
     description:
-      'Dual-time platinum resonance mechanism — a philosophical exploration of harmonic frequency regulation.',
+      'Platinresonanz mit zwei Zeitzonen - eine philosophische Studie ueber harmonische Frequenzregulierung.',
     investmentNote:
-      'Discontinued and historically important. Increasingly museum-level interest.',
+      'Eingestellt und historisch bedeutend, zunehmend auf musealem Radar.',
     imageUrl: '/images/watches/fpj-resonance/2.jpg',
     additionalImages: [
       '/images/watches/fpj-resonance/1.jpg'
     ],
-    status: 'Reserved'
+    status: 'Reserviert'
   },
   {
     id: 'lange-qp',
-    brand: 'A. Lange & Söhne',
+    brand: 'A. Lange & Soehne',
     model: 'Lange 1 Perpetual Calendar',
     reference: '345.033',
     year: '2023',
     caseSize: '41.9mm',
     movement: 'Calibre L021.3',
-    condition: 'Unworn',
-    boxPapers: 'Full Set',
+    condition: 'Ungetragen',
+    boxPapers: 'Komplettset',
     description:
-      'Perpetual calendar integrated into the asymmetric Lange 1 architecture — a rare fusion of complexity and restraint.',
+      'Ewiger Kalender, integriert in die asymmetrische Lange-1-Architektur - seltene Verbindung von Komplexitaet und Ruhe.',
     investmentNote:
-      'Low production capacity ensures long-term supply-demand imbalance.',
+      'Geringe Fertigungskapazitaet sorgt fuer dauerhafte Verknappung.',
     imageUrl: '/images/watches/lange-qp/1.png',
     additionalImages: [
       '/images/watches/lange-qp/2.png',
       '/images/watches/lange-qp/3.png'
     ],
-    status: 'Available for Consultation'
+    status: 'Nach Terminabstimmung verfuegbar'
   }
 ];

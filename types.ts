@@ -11,7 +11,8 @@ export interface Watch {
   description: string;
   investmentNote?: string;
   imageUrl: string;
-  status: 'Available for Consultation' | 'By Private Request' | 'Acquisition Ongoing' | 'Reserved';
+  additionalImages?: string[]; // Up to 2 additional detail shots
+  status: 'Nach Terminabstimmung verfuegbar' | 'Nur auf Anfrage' | 'Ankauf in Arbeit' | 'Reserviert';
 }
 
 export interface NavItem {

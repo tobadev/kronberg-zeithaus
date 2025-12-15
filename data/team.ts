@@ -8,26 +8,26 @@ export interface TeamMember {
 export const teamMembers: TeamMember[] = [
   {
     name: 'Dr. Heinrich Kronberg',
-    role: 'Founder & Principal Curator',
-    focus: 'Independent Watchmaking & Germanic Horology',
-    location: 'München'
+    role: 'Gruender & Leitender Kurator',
+    focus: 'Unabhaengige Uhrmacherei & deutschsprachige Uhrmacherkunst',
+    location: 'Muenchen'
   },
   {
     name: 'Sophia Richter',
-    role: 'Director of Private Acquisitions',
-    focus: 'Discontinued References & Auction Procurement',
-    location: 'München / Genève'
+    role: 'Direktorin Private Akquisitionen',
+    focus: 'Eingestellte Referenzen & Auktionen',
+    location: 'Muenchen / Genf'
   },
   {
     name: 'Eduard von Lichtenstein',
-    role: 'Head of Research & Provenance',
-    focus: 'Authentication & Historical Documentation',
-    location: 'München'
+    role: 'Leitung Recherche & Provenienz',
+    focus: 'Authentifizierung & historische Dokumentation',
+    location: 'Muenchen'
   },
   {
     name: 'Catherine Laurent',
-    role: 'Client Strategy, Family Offices',
-    focus: 'Portfolio Advisory & Long-Term Asset Positioning',
-    location: 'Zürich'
+    role: 'Mandatsstrategie Family Offices',
+    focus: 'Portfolio Advisory & langfristige Asset-Positionierung',
+    location: 'Zuerich'
   }
 ];

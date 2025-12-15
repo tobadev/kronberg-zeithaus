@@ -85,7 +85,7 @@ export const Home: React.FC = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-gold-500 text-xs md:text-sm tracking-[0.3em] uppercase mb-6"
           >
-            Munich • Private Sourcing • Investment Grade
+            Muenchen > Private Beschaffung > Investment-Grade
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -93,7 +93,7 @@ export const Home: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
             className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-8 leading-tight"
           >
-            Assets of <br/><span className="italic text-zinc-400">Permanence</span>
+            Werte von <br/><span className="italic text-zinc-400">Bestand</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -101,8 +101,8 @@ export const Home: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             className="text-zinc-300 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto mb-12"
           >
-            We do not simply sell watches. We curate horological history for the discerning investor.
-            Available by appointment in Maximilianstraße.
+            Wir verkaufen nicht, wir kuratieren horologische Geschichte fuer anspruchsvolle Anlegerinnen und Anleger.
+            Termine nur nach Absprache in der Maximilianstrasse.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -114,13 +114,13 @@ export const Home: React.FC = () => {
               to="/watches"
               className="px-8 py-4 bg-gold-500 text-charcoal-950 text-sm tracking-widest uppercase hover:bg-white transition-colors duration-300 font-medium min-w-[200px]"
             >
-              View Collection
+              Kollektion ansehen
             </NavLink>
             <NavLink
               to="/contact"
               className="px-8 py-4 border border-zinc-600 text-white text-sm tracking-widest uppercase hover:border-gold-500 hover:text-gold-500 transition-colors duration-300 min-w-[200px]"
             >
-              Inquire Now
+              Jetzt anfragen
             </NavLink>
           </motion.div>
         </div>
@@ -137,10 +137,10 @@ export const Home: React.FC = () => {
         <div className="max-w-3xl mx-auto px-6 text-center">
           <div className="w-16 h-0.5 bg-gold-500 mx-auto mb-8"></div>
           <p className="font-serif text-3xl md:text-4xl text-zinc-300 leading-relaxed italic">
-            For those who measure ownership in decades, not seasons.
+            Fuer Menschen, die Besitz in Jahrzehnten statt in Saisons messen.
           </p>
           <p className="text-zinc-500 text-sm mt-8 uppercase tracking-widest">
-            Discretion · Patience · Continuity
+            Diskretion > Geduld > Kontinuitaet
           </p>
         </div>
       </motion.section>
@@ -155,8 +155,8 @@ export const Home: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto">
           <SectionHeading
-            title="Curated Selections"
-            subtitle="Recent acquisitions from our private network"
+            title="Kuratiert Ausgewaehlt"
+            subtitle="Neueste Zugaenge aus unserem privaten Netzwerk"
           />
           <motion.div
             initial="hidden"
@@ -174,7 +174,7 @@ export const Home: React.FC = () => {
               to="/watches"
               className="inline-block border-b border-gold-500 pb-1 text-gold-500 uppercase tracking-widest text-xs hover:text-white hover:border-white transition-colors"
             >
-              View Entire Inventory
+              Gesamten Bestand ansehen
             </NavLink>
           </div>
         </div>
@@ -194,27 +194,27 @@ export const Home: React.FC = () => {
               <div className="w-12 h-12 mb-6 text-gold-500 border border-zinc-800 rounded-sm flex items-center justify-center group-hover:border-gold-500 transition-colors">
                 <ShieldCheck className="w-5 h-5" />
               </div>
-              <h3 className="text-lg font-serif text-white mb-4">Uncompromising Authenticity</h3>
+              <h3 className="text-lg font-serif text-white mb-4">Kompromisslose Authentizitaet</h3>
               <p className="text-zinc-400 text-sm leading-relaxed">
-                Every timepiece undergoes a 24-point inspection by our master watchmakers in Munich. We guarantee the provenance of every component.
+                Jeder Zeitmesser wird in Muenchen anhand einer 24-Punkte-Pruefung durch unsere Uhrmachermeister bewertet. Wir garantieren die Herkunft jeder Komponente.
               </p>
             </div>
             <div className="px-4 group">
               <div className="w-12 h-12 mb-6 text-gold-500 border border-zinc-800 rounded-sm flex items-center justify-center group-hover:border-gold-500 transition-colors">
                 <Lock className="w-5 h-5" />
               </div>
-              <h3 className="text-lg font-serif text-white mb-4">Discreet Acquisition</h3>
+              <h3 className="text-lg font-serif text-white mb-4">Diskreter Ankauf</h3>
               <p className="text-zinc-400 text-sm leading-relaxed">
-                Our client list is sealed. We operate with the discretion required by high-profile collectors, facilitating transfers without public listing when requested.
+                Unsere Mandantenliste bleibt vertraulich. Wir agieren mit der Diskretion, die hochkaraetige Sammler erwarten, und wickeln Transfers auf Wunsch ohne oeffentliche Listung ab.
               </p>
             </div>
             <div className="px-4 group">
               <div className="w-12 h-12 mb-6 text-gold-500 border border-zinc-800 rounded-sm flex items-center justify-center group-hover:border-gold-500 transition-colors">
                 <Eye className="w-5 h-5" />
               </div>
-              <h3 className="text-lg font-serif text-white mb-4">Investment Strategy</h3>
+              <h3 className="text-lg font-serif text-white mb-4">Investment-Strategie</h3>
               <p className="text-zinc-400 text-sm leading-relaxed">
-                We advise not just on aesthetics, but on asset retention. Our team monitors global auction results to guide your portfolio decisions.
+                Wir beraten nicht nur zur Aesthetik, sondern zur nachhaltigen Wertentwicklung. Unser Team verfolgt weltweite Auktionsergebnisse, um Portfolioentscheidungen zu untermauern.
               </p>
             </div>
           </div>
@@ -233,9 +233,9 @@ export const Home: React.FC = () => {
             
             {/* Left Content */}
             <div>
-                <SectionHeading title="The Boutique" subtitle="Maximilianstraße, München" alignment="left" />
+                <SectionHeading title="Die Boutique" subtitle="Maximilianstrasse, Muenchen" alignment="left" />
                 <p className="text-zinc-300 text-lg font-light leading-relaxed mb-8 max-w-md">
-                    Situated in the heart of Munich's most prestigious avenue, our showroom offers a discreet, private environment for consultation and handover.
+                    Im Herzen der renommiertesten Strasse Muenchens bietet unser Salon ein diskretes Umfeld fuer Beratung und Uebergabe.
                 </p>
                 
                 <div className="space-y-6 mb-10">
@@ -243,16 +243,16 @@ export const Home: React.FC = () => {
                         <MapPin className="text-gold-500 w-5 h-5 mt-1 flex-shrink-0" />
                         <address className="not-italic text-zinc-400 leading-relaxed">
                             Kronberg Zeithaus<br/>
-                            Maximilianstraße 14<br/>
-                            80539 München<br/>
-                            Germany
+                            Maximilianstrasse 14<br/>
+                            80539 Muenchen<br/>
+                            Deutschland
                         </address>
                     </div>
                     <div className="flex items-start gap-4">
                         <Compass className="text-gold-500 w-5 h-5 mt-1 flex-shrink-0" />
                         <p className="text-zinc-400">
-                            By Appointment Only<br/>
-                            <span className="text-xs uppercase tracking-widest text-zinc-600">Strictly Private Access</span>
+                            Nur nach Termin<br/>
+                            <span className="text-xs uppercase tracking-widest text-zinc-600">Streng private Termine</span>
                         </p>
                     </div>
                 </div>
@@ -261,7 +261,7 @@ export const Home: React.FC = () => {
                   to="/contact" 
                   className="inline-block px-8 py-4 bg-transparent border border-white text-white text-xs tracking-widest uppercase hover:bg-white hover:text-charcoal-950 transition-colors"
                 >
-                  Request Appointment
+                  Termin anfragen
                 </NavLink>
             </div>
 
@@ -277,7 +277,7 @@ export const Home: React.FC = () => {
                    style={{ border: 0, filter: 'grayscale(100%) invert(92%) contrast(83%)' }} 
                    allowFullScreen={true} 
                    loading="lazy"
-                   title="Boutique Location"
+                   title="Boutique Standort"
                    className="w-full h-full opacity-80 group-hover:opacity-100 transition-opacity duration-700"
                ></iframe>
 
@@ -293,7 +293,7 @@ export const Home: React.FC = () => {
                     <div className="flex items-center gap-2 bg-charcoal-950/90 backdrop-blur-md px-4 py-3 border border-zinc-800/80 rounded-sm shadow-lg">
                        <Globe className="w-3 h-3 text-gold-500 animate-pulse" />
                        <div className="text-[10px] font-mono text-gold-500 tracking-widest">
-                          48.139° N / 11.579° E
+                          48.139 N / 11.579 E
                        </div>
                     </div>
                   </div>
@@ -317,23 +317,23 @@ export const Home: React.FC = () => {
                               <span className={`relative inline-flex rounded-full h-2 w-2 shadow-lg ${isOpen ? 'bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]' : 'bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.6)]'}`}></span>
                            </span>
                            <span className={`text-[10px] uppercase tracking-widest font-bold ${isOpen ? 'text-zinc-200' : 'text-zinc-400'}`}>
-                              {isOpen ? 'Showroom Open' : 'Showroom Closed'}
+                              {isOpen ? 'Salon offen' : 'Salon geschlossen'}
                            </span>
                         </div>
                         <div className="flex items-center gap-2 text-[9px] font-mono text-zinc-500 border-t border-zinc-800 pt-1.5 mt-0.5">
                            <Clock className="w-3 h-3" />
-                           <span>Local Time: {munichTimeStr}</span>
+                           <span>Ortszeit: {munichTimeStr}</span>
                         </div>
                      </div>
 
                      {/* Bottom Right: Action Button (Pointer Events Auto to be clickable) */}
                      <a 
-                        href="https://www.google.com/maps/search/?api=1&query=Maximilianstraße+14+Munich" 
+                        href="https://www.google.com/maps/search/?api=1&query=Maximilianstrasse+14+Muenchen" 
                         target="_blank" 
                         rel="noreferrer"
                         className="pointer-events-auto flex items-center gap-2 text-charcoal-950 text-[10px] uppercase tracking-widest border border-transparent px-4 py-3 bg-gold-500 hover:bg-white transition-colors shadow-lg font-bold rounded-sm"
                       >
-                         <span>Open Map</span>
+                         <span>Karte oeffnen</span>
                          <ExternalLink className="w-3 h-3" />
                       </a>
                   </div>
