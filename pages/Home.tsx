@@ -85,7 +85,7 @@ export const Home: React.FC = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-gold-500 text-xs md:text-sm tracking-[0.3em] uppercase mb-6"
           >
-            Muenchen > Private Beschaffung > Investment-Grade
+            Muenchen &gt; Private Beschaffung &gt; Investment-Grade
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -140,7 +140,7 @@ export const Home: React.FC = () => {
             Fuer Menschen, die Besitz in Jahrzehnten statt in Saisons messen.
           </p>
           <p className="text-zinc-500 text-sm mt-8 uppercase tracking-widest">
-            Diskretion > Geduld > Kontinuitaet
+            Diskretion &gt; Geduld &gt; Kontinuitaet
           </p>
         </div>
       </motion.section>
