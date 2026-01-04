@@ -140,42 +140,6 @@ export const watches: Watch[] = [
     status: 'Nach Terminabstimmung verfuegbar'
   },
   {
-    id: 'gronefeld-1941',
-    brand: 'Gronefeld',
-    model: '1941 Principia',
-    reference: 'PRINC-18WG',
-    year: '2020',
-    caseSize: '39.5mm',
-    movement: 'Calibre G-06',
-    condition: 'Sammlerzustand',
-    boxPapers: 'Komplettset',
-    description:
-      'Weissgoldene Dresswatch der Horological Brothers mit handfinishtem Mikrorotor.',
-    investmentNote:
-      'Jaehrliche Produktion unter 200 Stueck garantiert Exklusivitaet.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1629581352317-0c7531a3994c?auto=format&fit=crop&w=800&q=80',
-    status: 'Reserviert'
-  },
-  {
-    id: 'voutilainen-28ti',
-    brand: 'Kari Voutilainen',
-    model: 'Vingt-8 Titanium',
-    reference: '28Ti',
-    year: '2018',
-    caseSize: '39mm',
-    movement: 'Calibre 28',
-    condition: 'Sammlerzustand',
-    boxPapers: 'Komplettset + Serviceunterlagen',
-    description:
-      'Titangehaeuse mit hauseigener Guilloche und offener Rueckseite - ein Markenzeichen pure artisanaler Uhrmacherei.',
-    investmentNote:
-      'Aeusserst geringe Produktionszahlen sichern langfristige Knappheit.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1622434641406-a158105c9168?auto=format&fit=crop&w=800&q=80',
-    status: 'Nur auf Anfrage'
-  },
-  {
     id: 'mf-lm101',
     brand: 'MB&F',
     model: 'Legacy Machine 101',
@@ -191,60 +155,6 @@ export const watches: Watch[] = [
       'Fruehe Legacy-Machine-Serien werden zunehmend von Sammlern institutionell platziert.',
     imageUrl:
       'https://images.unsplash.com/photo-1594576722512-582bcd46fba3?auto=format&fit=crop&w=800&q=80',
-    status: 'Nach Terminabstimmung verfuegbar'
-  },
-  {
-    id: 'moser-streamliner',
-    brand: 'H. Moser & Cie.',
-    model: 'Streamliner Centre Seconds',
-    reference: '6200-1200',
-    year: '2023',
-    caseSize: '40mm',
-    movement: 'Calibre HMC 200',
-    condition: 'Ungetragen',
-    boxPapers: 'Komplettset',
-    description:
-      'Integriertes Band, minimalistische Gestaltung und Fume-Zifferblatt definieren diesen zeitgenoessischen Klassiker.',
-    investmentNote:
-      'Geringe Stueckzahlen ziehen langfristig orientierte Kaeufer an.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1629581352317-0c7531a3994c?auto=format&fit=crop&w=800&q=80',
-    status: 'Ankauf in Arbeit'
-  },
-  {
-    id: 'urban-jurgensen',
-    brand: 'Urban Jurgensen',
-    model: 'Reference 1741',
-    reference: '1741WG',
-    year: '2019',
-    caseSize: '41mm',
-    movement: 'P4 Hand-finished',
-    condition: 'Neuwertig',
-    boxPapers: 'Komplettset',
-    description:
-      'Tropfenfoermige Bandanstosse, handgedrehte Guilloche und handwerkliche Veredelung mit Wurzeln im 18. Jahrhundert.',
-    investmentNote:
-      'Kleinstserienproduktion fuehrt zu steigender Sekundaernachfrage.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1629581352317-0c7531a3994c?auto=format&fit=crop&w=800&q=80',
-    status: 'Nach Terminabstimmung verfuegbar'
-  },
-  {
-    id: 'parmigiani-tonda',
-    brand: 'Parmigiani Fleurier',
-    model: 'Tonda PF Micro-Rotor',
-    reference: 'PFC914-1020001',
-    year: '2022',
-    caseSize: '40mm',
-    movement: 'PF703 Micro-Rotor',
-    condition: 'Ungetragen',
-    boxPapers: 'Komplettset',
-    description:
-      'Sportuhr mit platiniertem Rand, Grain-d\'orge-Guilloche und ultraflachem Mikrorotor.',
-    investmentNote:
-      'Klassenfuehrende Veredelung und zunehmendes Interesse institutioneller Kaeufer foerdern stabiles Wachstum.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=800&q=80',
     status: 'Nach Terminabstimmung verfuegbar'
   },
   {
