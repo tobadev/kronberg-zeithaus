@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Mail } from 'lucide-react';
 import { teamMembers } from '../data/team';
 
 export const TeamSection: React.FC = () => {
@@ -40,10 +41,17 @@ export const TeamSection: React.FC = () => {
                 </p>
               )}
               {member.location && (
-                <p className="text-[10px] uppercase tracking-widest text-zinc-600">
+                <p className="text-[10px] uppercase tracking-widest text-zinc-600 mb-2">
                   {member.location}
                 </p>
               )}
+              <a
+                href={`mailto:${member.email}`}
+                className="inline-flex items-center gap-2 text-xs text-zinc-400 hover:text-gold-500 transition-colors"
+              >
+                <Mail className="w-3 h-3" />
+                <span>{member.email}</span>
+              </a>
             </motion.div>
           ))}
         </div>
