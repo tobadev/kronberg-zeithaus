@@ -45,12 +45,12 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             onClick={onClose}
-            className="fixed inset-0 bg-charcoal-950/80 backdrop-blur-sm z-50"
+            className="fixed inset-0 bg-charcoal-950/80 backdrop-blur-sm z-[100]"
             role="presentation"
           />
 
           {/* Modal Panel */}
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          <div className="fixed inset-0 z-[101] flex items-center justify-center p-4 pointer-events-none">
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -59,7 +59,7 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
               onClick={(e) => e.stopPropagation()}
               role="dialog"
               aria-modal="true"
-              className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-charcoal-900 border border-zinc-800 shadow-2xl"
+              className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-charcoal-900 border border-zinc-800 shadow-2xl pointer-events-auto"
             >
               {/* Close button */}
               <button
