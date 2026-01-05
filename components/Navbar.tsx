@@ -90,32 +90,18 @@ export const Navbar: React.FC = () => {
           <X className="w-8 h-8" />
         </button>
 
-        <div className="flex flex-col gap-12 items-center">
-          {/* Logo */}
-          <NavLink to="/" className="flex items-center gap-3 group">
-            <div className="p-2 border border-zinc-700 group-hover:border-gold-500 transition-colors rounded-sm">
-              <Watch className="w-6 h-6 text-gold-500" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-serif text-lg tracking-wider text-white">KRONBERG</span>
-              <span className="font-sans text-[0.6rem] tracking-[0.3em] text-zinc-400 uppercase">Zeithaus Muenchen</span>
-            </div>
-          </NavLink>
-
-          {/* Navigation Links */}
-          <div className="flex flex-col gap-8 text-center">
-            {navLinks.map((link) => (
-              <NavLink
-                key={link.path}
-                to={link.path}
-                className={({ isActive }) =>
-                  `font-serif text-2xl transition-colors hover:text-gold-500 ${isActive ? 'text-gold-500' : 'text-zinc-300'}`
-                }
-              >
-                {link.name}
-              </NavLink>
-            ))}
-          </div>
+        <div className="flex flex-col gap-8 text-center">
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.path}
+              to={link.path}
+              className={({ isActive }) =>
+                `font-serif text-2xl transition-colors hover:text-gold-500 ${isActive ? 'text-gold-500' : 'text-zinc-300'}`
+              }
+            >
+              {link.name}
+            </NavLink>
+          ))}
         </div>
       </div>
     </nav>
