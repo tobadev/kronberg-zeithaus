@@ -50,17 +50,16 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
           />
 
           {/* Modal Panel */}
-          <div className="fixed inset-0 z-[101] flex items-center justify-center p-4 pointer-events-none">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
-              onClick={(e) => e.stopPropagation()}
-              role="dialog"
-              aria-modal="true"
-              className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-charcoal-900 border border-zinc-800 shadow-2xl pointer-events-auto"
-            >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.95, y: 20 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            onClick={(e) => e.stopPropagation()}
+            role="dialog"
+            aria-modal="true"
+            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[101] w-[calc(100%-2rem)] max-w-2xl max-h-[90vh] overflow-y-auto bg-charcoal-900 border border-zinc-800 shadow-2xl"
+          >
               {/* Close button */}
               <button
                 onClick={onClose}
@@ -74,8 +73,7 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
               <div className="p-8 md:p-12">
                 {children}
               </div>
-            </motion.div>
-          </div>
+          </motion.div>
         </>
       )}
     </AnimatePresence>
