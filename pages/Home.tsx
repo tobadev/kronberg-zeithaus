@@ -320,7 +320,7 @@ export const Home: React.FC = () => {
                               {isOpen ? 'Salon offen' : 'Salon geschlossen'}
                            </span>
                         </div>
-                        <div className="flex items-center gap-2 text-[9px] font-mono text-zinc-500 border-t border-zinc-800 pt-1.5 mt-0.5">
+                        <div className="inline-flex items-center gap-2 text-[9px] font-mono text-zinc-500 border-t border-zinc-800 pt-1.5 mt-0.5">
                            <Clock className="w-3 h-3" />
                            <span>Ortszeit: {munichTimeStr}</span>
                         </div>
