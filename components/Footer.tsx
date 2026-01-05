@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Watch } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -9,7 +10,15 @@ export const Footer: React.FC = () => {
           
           {/* Brand Column */}
           <div className="col-span-1">
-            <h3 className="font-serif text-2xl text-white mb-6">KRONBERG <span className="text-gold-500 italic">Zeithaus</span></h3>
+            <NavLink to="/" className="flex items-center gap-3 group mb-6 w-fit">
+              <div className="p-2 border border-zinc-700 group-hover:border-gold-500 transition-colors rounded-sm">
+                <Watch className="w-6 h-6 text-gold-500" />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-serif text-lg tracking-wider text-white">KRONBERG</span>
+                <span className="font-sans text-[0.6rem] tracking-[0.3em] text-zinc-400 uppercase">Zeithaus Muenchen</span>
+              </div>
+            </NavLink>
             <p className="text-zinc-400 text-sm leading-relaxed max-w-sm mb-4">
               Sammler, nicht Kunden. Geprueft, bevor etwas sichtbar wird.
             </p>
