@@ -77,17 +77,6 @@ export const RequestInformationForm: React.FC<RequestInformationFormProps> = ({ 
           />
         </div>
 
-        <div>
-          <label className="block text-xs uppercase tracking-widest text-zinc-500 mb-2">
-            Nachricht
-          </label>
-          <textarea
-            rows={5}
-            placeholder="Ankaufsziel, Budgetrahmen, Zeithorizont..."
-            className="w-full bg-zinc-900 border border-zinc-800 text-white px-4 py-3 focus:outline-none focus:border-gold-500 transition-colors placeholder:text-zinc-600"
-          ></textarea>
-        </div>
-
         <button
           type="submit"
           className="w-full bg-gold-500 text-charcoal-950 py-4 text-xs uppercase tracking-widest font-medium hover:bg-white transition-colors duration-300"
