@@ -48,6 +48,9 @@ export const PrivacyPolicy: React.FC = () => {
             <p className="mt-4">
               <strong>Kontaktformulare:</strong> Wenn Sie uns Anfragen uebermitteln, nutzen wir die angegebenen Daten (Name, Kontakt, Inhalt der Nachricht) ausschliesslich zur Bearbeitung Ihres Anliegens sowie fuer moegliche Rueckfragen. Eine Weitergabe findet ohne Ihre Einwilligung nicht statt.
             </p>
+            <p className="mt-4">
+              <strong>Uhren-Anfragen:</strong> Wenn Sie ueber unser Anfrage-Formular Interesse an einem bestimmten Zeitmesser bekunden, verwenden wir Ihre angegebenen Daten (Name, E-Mail-Adresse, Region) ausschliesslich, um Sie bezueglich Ihrer Anfrage zu kontaktieren und Ihnen ein individuelles Angebot zu unterbreiten. Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.
+            </p>
           </div>
 
           <div>
