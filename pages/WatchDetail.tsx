@@ -3,7 +3,7 @@ import { useParams, NavLink, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { watches } from '../data/watches';
 import { ArrowLeft, CheckCircle2, Shield, TrendingUp } from 'lucide-react';
-import { Modal } from '../components/Modal';
+import { ModalV2 } from '../components/ModalV2';
 import { RequestInformationForm } from '../components/RequestInformationForm';
 
 export const WatchDetail: React.FC = () => {
@@ -184,10 +184,10 @@ export const WatchDetail: React.FC = () => {
         </div>
       </div>
 
-      {/* Modal */}
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+      {/* Modal V2 */}
+      <ModalV2 isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <RequestInformationForm watch={watch} />
-      </Modal>
+      </ModalV2>
     </div>
   );
 };
