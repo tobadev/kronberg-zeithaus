@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Background - A. Lange & Söhne</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #18181b;
+            color: #fff;
+            padding: 40px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #d4af37;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #9ca3af;
+            margin-bottom: 40px;
+        }
+
+        .drop-zone {
+            border: 3px dashed #d4af37;
+            border-radius: 12px;
+            padding: 60px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 40px;
+        }
+
+        .drop-zone:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: #f0c952;
+        }
+
+        .drop-zone.dragover {
+            background: rgba(212, 175, 55, 0.2);
+            border-color: #f0c952;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .btn {
+            background: #d4af37;
+            color: #000;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: #f0c952;
+        }
+
+        .results {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .result-item {
+            background: #27272a;
+            border-radius: 12px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .result-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            background: white;
+        }
+
+        .result-item h3 {
+            color: #d4af37;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .status {
+            color: #9ca3af;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .status.processing {
+            color: #60a5fa;
+        }
+
+        .status.done {
+            color: #34d399;
+        }
+
+        .status.error {
+            color: #f87171;
+        }
+
+        .download-btn {
+            background: #d4af37;
+            color: #000;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .download-btn:hover {
+            background: #f0c952;
+        }
+
+        .progress {
+            color: #d4af37;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Background Removal Tool</h1>
+        <p class="subtitle">For A. Lange & Söhne watches</p>
+
+        <div class="drop-zone" id="dropZone">
+            <p style="color: #d4af37; font-size: 20px; margin-bottom: 10px;">📸 Drop images here</p>
+            <p style="color: #9ca3af; margin-bottom: 20px;">or click to select files</p>
+            <button class="btn">Select Images</button>
+        </div>
+
+        <input type="file" id="fileInput" multiple accept="image/*">
+
+        <div class="progress" id="progress"></div>
+
+        <div class="results" id="results"></div>
+    </div>
+
+    <script type="module">
+        import { removeBackground } from 'https://cdn.jsdelivr.net/npm/@imgly/background-removal@1.7.0/+esm';
+
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+        const results = document.getElementById('results');
+        const progress = document.getElementById('progress');
+
+        dropZone.addEventListener('click', () => fileInput.click());
+
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('dragover');
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('dragover');
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('dragover');
+            handleFiles(e.dataTransfer.files);
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            handleFiles(e.target.files);
+        });
+
+        async function handleFiles(files) {
+            results.innerHTML = '';
+            const fileArray = Array.from(files);
+
+            for (let i = 0; i < fileArray.length; i++) {
+                const file = fileArray[i];
+                progress.textContent = `Processing ${i + 1} of ${fileArray.length}...`;
+                await processImage(file);
+            }
+
+            progress.textContent = `✓ Done! Processed ${fileArray.length} images`;
+        }
+
+        async function processImage(file) {
+            const resultDiv = document.createElement('div');
+            resultDiv.className = 'result-item';
+            resultDiv.innerHTML = `
+                <h3>${file.name}</h3>
+                <div class="status processing">Processing...</div>
+            `;
+            results.appendChild(resultDiv);
+
+            try {
+                const blob = await removeBackground(file);
+                const url = URL.createObjectURL(blob);
+
+                const img = document.createElement('img');
+                img.src = url;
+
+                const statusDiv = resultDiv.querySelector('.status');
+                statusDiv.textContent = '✓ Done!';
+                statusDiv.className = 'status done';
+
+                resultDiv.insertBefore(img, statusDiv);
+
+                const downloadLink = document.createElement('a');
+                downloadLink.href = url;
+                downloadLink.download = file.name.replace(/\.(jpg|jpeg)$/i, '.png');
+                downloadLink.className = 'download-btn';
+                downloadLink.textContent = '⬇ Download PNG';
+                resultDiv.appendChild(downloadLink);
+
+            } catch (error) {
+                const statusDiv = resultDiv.querySelector('.status');
+                statusDiv.textContent = `✗ Error: ${error.message}`;
+                statusDiv.className = 'status error';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -6,7 +6,17 @@
       "Bash(gh --version:*)",
       "Bash(gh repo create:*)",
       "Bash(vercel --version:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "WebFetch(domain:www.vacheron-constantin.com)",
+      "Bash(npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(npm install:*)",
+      "Bash(node scripts/removeBg.js:*)",
+      "Bash(copy \"%USERPROFILE%\\Downloads\\1.png\" \"public\\images\\watches\\lange-qp\\1.png\")",
+      "Bash(copy \"%USERPROFILE%\\Downloads\\2.png\" \"public\\images\\watches\\lange-qp\\2.png\")",
+      "Bash(copy \"%USERPROFILE%\\Downloads\\3.png\" \"public\\images\\watches\\lange-qp\\3.png\")",
+      "Bash(dir \"C:\\watches\\public\\images\\watches\" /s /b)",
+      "Bash(where convert magick:*)"
     ],
     "deny": [],
     "ask": []
