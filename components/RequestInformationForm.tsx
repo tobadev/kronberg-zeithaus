@@ -43,7 +43,7 @@ export const RequestInformationForm: React.FC<RequestInformationFormProps> = ({ 
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="space-y-6">
           <div>
             <label className="block text-xs uppercase tracking-widest text-zinc-500 mb-2">
               Name

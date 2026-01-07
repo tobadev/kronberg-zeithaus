@@ -59,7 +59,7 @@ export const ModalV2: React.FC<ModalV2Props> = ({ isOpen, onClose, children }) =
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.9, y: 30 }}
         transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-        className="relative z-10 w-full max-w-3xl bg-charcoal-900 border border-zinc-700 shadow-[0_20px_60px_rgba(0,0,0,0.9)] max-h-[90vh] overflow-hidden flex flex-col"
+        className="relative z-10 w-full max-w-xl bg-charcoal-900 border border-zinc-700 shadow-[0_20px_60px_rgba(0,0,0,0.9)] max-h-[90vh] overflow-hidden flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
