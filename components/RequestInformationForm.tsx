@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { CheckCircle } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 import { Watch } from '../types';
 
 interface RequestInformationFormProps {
@@ -75,6 +76,21 @@ export const RequestInformationForm: React.FC<RequestInformationFormProps> = ({ 
             placeholder="z. B. Muenchen, Zuerich, London"
             className="w-full bg-zinc-900 border border-zinc-800 text-white px-4 py-3 focus:outline-none focus:border-gold-500 transition-colors placeholder:text-zinc-600"
           />
+        </div>
+
+        <div className="flex items-start gap-3">
+          <input
+            type="checkbox"
+            id="privacy-check"
+            required
+            className="mt-1 w-4 h-4 accent-gold-500 bg-zinc-900 border-zinc-700"
+          />
+          <label htmlFor="privacy-check" className="text-xs text-zinc-400 leading-relaxed">
+            Ich akzeptiere die{' '}
+            <NavLink to="/privacy-policy" className="text-gold-500 hover:text-white transition-colors underline">
+              Datenschutzerklaerung
+            </NavLink>
+          </label>
         </div>
 
         <button
