@@ -2,18 +2,8 @@
   <!-- Background -->
   <rect width="32" height="32" fill="#0a0a0a"/>
 
-  <!-- Watch Icon (centered, scaled to fit) -->
-  <g transform="translate(8, 6)">
-    <!-- Watch Circle -->
-    <circle cx="8" cy="10" r="5" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <!-- Watch Hands -->
-    <path d="M8 8.5v1.8l1.3 0.8" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <!-- Top Strap -->
-    <path d="m10.8 6.4-.5-2.7a1.3 1.3 0 0 0-1.3-1h-1.8a1.3 1.3 0 0 0-1.3 1l-.5 2.7" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <!-- Bottom Strap -->
-    <path d="m5.2 13.7.5 2.6a1.3 1.3 0 0 0 1.3 1h1.8a1.3 1.3 0 0 0 1.3-1l.5-2.7" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
+  <!-- K Letter -->
+  <text x="16" y="23" font-family="'Playfair Display', serif" font-size="24" font-weight="400" fill="#D4AF37" text-anchor="middle" letter-spacing="0.08em">
+    K
+  </text>
 </svg>
