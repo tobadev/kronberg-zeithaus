@@ -62,7 +62,7 @@ export const Footer: React.FC = () => {
 
         <div className="border-t border-zinc-900 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-zinc-600 text-xs">
-            (c) {new Date().getFullYear()} Kronberg Zeithaus. Alle Rechte vorbehalten. | Entwickelt von <a href="https://amdigital.agency/" target="_blank" rel="noopener noreferrer" className="text-gold-500 hover:text-white transition-colors">AM Digital Agency</a>
+            © {new Date().getFullYear()} Kronberg Zeithaus. Alle Rechte vorbehalten. | Entwickelt von <a href="https://amdigital.agency/" target="_blank" rel="noopener noreferrer" className="text-gold-500 hover:text-white transition-colors">AM Digital Agency</a>
           </p>
           <p className="text-zinc-600 text-xs max-w-md text-center md:text-right">
             Kronberg Zeithaus ist ein unabhaengiger Spezialist fuer seltene Zeitmesser. Keine Verbindung zu Herstellern oder autorisierten Haendlern.
